@@ -727,9 +727,11 @@ body {
 
 .section7 .secure_btn {
 
+    /*
     display: flex;
     justify-content: center;
     align-items: center;
+*/
 
     width: 275px;
     height: 55px;
@@ -738,7 +740,8 @@ body {
 }
 
 .section7 .yellow_btn::after {
-    right: 44px;
+    /*    right: 44px;*/
+    height: 55px;
 }
 
 .section7 .text {
@@ -1163,7 +1166,7 @@ body {
     }
 
     .section7 .yellow_btn::after {
-        right: 27px;
+        height: 53px;
     }
 
     .section7 .text {
@@ -1439,9 +1442,10 @@ body {
         font-size: 24px;
         line-height: 24px;
     }
+
     .baner_box2 .yellow_btn::after {
-    height: 26px;
-}
+        height: 26px;
+    }
 
     .baner_box2 {
         background: url(../img/baner2.png) no-repeat 22% 56%, linear-gradient(90deg, rgba(44, 111, 189, 1) 3%, rgba(33, 116, 206, 1) 42%);
@@ -1542,7 +1546,7 @@ body {
     }
 
     .section7 .yellow_btn::after {
-        right: 15%;
+           height: 24px;
     }
 }
 
@@ -1635,7 +1639,7 @@ body {
     }
 
     .section7 .yellow_btn::after {
-        right: 6%;
+/*        right: 6%;*/
     }
 
 }
