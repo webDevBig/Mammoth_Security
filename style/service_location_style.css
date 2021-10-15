@@ -1,24 +1,23 @@
 .h1 {
     font-size: 40px;
     color: #2C6FBD;
-    font-weight: 600;
+    font-weight: 600
 }
+
 body {
     background-image: url(../img/bg.png);
     background-position: center;
     background-repeat: no-repeat;
-   
-    background-size: 100%;
-
+    background-size: 100%
 }
 
 .h1 span {
     font-weight: 800;
-    font-style: italic;
+    font-style: italic
 }
 
 header {
-    box-shadow: 0 6px 38px rgb(0 0 0 / 23%);
+    box-shadow: 0 6px 38px rgb(0 0 0 / 23%)
 }
 
 .service_section {
@@ -27,18 +26,17 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 105px 0 190px;
+    padding: 105px 0 190px
 }
 
 .locations_items_box {
     width: 100%;
     max-width: 1267px;
-
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 30px 0 0;
+    margin: 30px 0 0
 }
 
 .locations_item {
@@ -54,7 +52,7 @@ header {
     padding: 33px 55px 33px 60px;
     cursor: pointer;
     margin: 0 0 20px;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .locations_item .name_location {
@@ -65,11 +63,11 @@ header {
     font-size: 40px;
     line-height: 65px;
     font-weight: 400;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .locations_item .name_location img {
-    width: 24px;
+    width: 24px
 }
 
 .locations_item .location_list {
@@ -79,67 +77,67 @@ header {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    list-style: none;
+    list-style: none
 }
 
 .locations_item .location_list li {
     font-size: 38px;
     line-height: 51px;
     font-weight: 200;
-    text-decoration: none;
+    text-decoration: none
 }
 
 @media all and (max-width:1024px) {
     .h1 {
-        font-size: 44px;
+        font-size: 44px
     }
 
     .locations_item .name_location {
         font-size: 44px;
-        line-height: 65px;
+        line-height: 65px
     }
 
     .locations_item .location_list li {
         font-size: 32px;
-        line-height: 38px;
+        line-height: 38px
     }
 
     .locations_item {
         height: 264px;
-        padding: 33px 75px 33px 110px;
+        padding: 33px 75px 33px 110px
     }
 
     .locations_items_box {
-        margin: 40px 0 0;
+        margin: 40px 0 0
     }
 }
 
 @media all and (max-width:600px) {
     .h1 {
-        text-align: center;
+        text-align: center
     }
 
     .locations_item {
         height: 350px;
-        padding: 33px 30px;
+        padding: 33px 30px
     }
 
     .locations_item .name_location {
         font-size: 36px;
-        line-height: 65px;
+        line-height: 65px
     }
 
     .locations_item .location_list li {
         font-size: 29px;
-        line-height: 35px;
+        line-height: 35px
     }
 
     .locations_item {
-        flex-direction: column;
+        flex-direction: column
     }
 
     .locations_item .location_list {
         width: max-content;
-        margin: 0 0 0 auto;
+        margin: 0 0 0 auto
     }
 }
