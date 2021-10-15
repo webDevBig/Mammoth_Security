@@ -50,7 +50,6 @@ header {
     background-size: cover;
     color: white;
     padding: 33px 55px 33px 60px;
-    cursor: pointer;
     margin: 0 0 20px;
     text-decoration: none
 }
@@ -63,7 +62,9 @@ header {
     font-size: 40px;
     line-height: 65px;
     font-weight: 400;
-    text-decoration: none
+    text-decoration: none;
+    color: white;
+    cursor: pointer
 }
 
 .locations_item .name_location img {
@@ -84,7 +85,13 @@ header {
     font-size: 38px;
     line-height: 51px;
     font-weight: 200;
-    text-decoration: none
+    text-decoration: none;
+    cursor: pointer;
+}
+.locations_item .location_list li  a
+{
+    color: white;
+    text-decoration: none;
 }
 
 @media all and (max-width:1024px) {
