@@ -182,6 +182,13 @@ body {
     align-items: center;
     width: auto;
     margin: 95px 0 60px 0;
+    transition: all 1s;
+    position: relative;
+    z-index: 4;
+}
+
+.we_do_section2 .we_do_clm:hover {
+    transform: scale(1.05);
 }
 
 .h1 span {
@@ -212,14 +219,17 @@ body {
 
 .we_do_clm:nth-of-type(2) {
     margin: 95px 0 60px -60px;
+    z-index: 3;
 }
 
 .we_do_clm:nth-of-type(3) {
     margin: 95px 0 60px -60px;
+    z-index: 2;
 }
 
 .we_do_clm:nth-of-type(4) {
     margin: 95px 0 60px -60px;
+    z-index: 1;
 }
 
 .we_do_section2 .circle_box img {
@@ -711,11 +721,24 @@ body {
     font-family: 'Nunito', sans-serif
 }
 
+.section7 input:last-of-type {
+    margin: 0 0 30px;
+}
+
 .section7 .secure_btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 275px;
     height: 55px;
-    width: 276px;
     font-size: 18px;
-    margin: 20px 0 0;
+    line-height: 55px;
+}
+
+.section7 .yellow_btn::after {
+    right: 44px;
 }
 
 .section7 .text {
@@ -856,6 +879,16 @@ body {
         background-position: -2% 50%;
     }
 
+    .home_section1 .contact_us {
+        font-size: 36px;
+        line-height: 36px;
+        width: 277px;
+    }
+
+    .home_section1 .yellow_btn::after {
+        height: 34px;
+    }
+
     .home_section1 {
         padding: 0px 0px 100px 55px;
         justify-content: flex-start;
@@ -874,6 +907,7 @@ body {
     .we_do_clm:nth-of-type(3) {
         margin: 95px 0 60px;
     }
+
 
     .we_do_section2 .circle_box {
         width: 466px;
@@ -1000,8 +1034,13 @@ body {
     }
 
     .baner_box2 .secure_btn {
-        width: 365px;
+        width: 400px;
         font-size: 32px;
+        line-height: 32px;
+    }
+
+    .baner_box2 .yellow_btn::after {
+        height: 35px;
     }
 
     .baner_box2 .arrow {
@@ -1108,14 +1147,23 @@ body {
         width: 435px;
         height: 58px;
         font-size: 32px;
+        line-height: 32px;
         color: #979BA0;
+    }
+
+    .section7 .yellow_btn::after {
+        height: 35px;
     }
 
     .section7 .secure_btn {
         height: 63px;
-        width: 320px;
+        width: 355px;
         font-size: 32px;
         margin: 20px 0 0;
+    }
+
+    .section7 .yellow_btn::after {
+        right: 27px;
     }
 
     .section7 .text {
@@ -1388,8 +1436,12 @@ body {
     }
 
     .baner_box2 .secure_btn {
-        font-size: 28px;
+        font-size: 24px;
+        line-height: 24px;
     }
+    .baner_box2 .yellow_btn::after {
+    height: 26px;
+}
 
     .baner_box2 {
         background: url(../img/baner2.png) no-repeat 22% 56%, linear-gradient(90deg, rgba(44, 111, 189, 1) 3%, rgba(33, 116, 206, 1) 42%);
@@ -1443,7 +1495,8 @@ body {
     .section7 input,
     .section7 .secure_btn {
         width: 100%;
-        font-size: 25px
+        font-size: 25px;
+        line-height: 25px;
     }
 
     .section7 .form_box {
@@ -1480,6 +1533,16 @@ body {
         flex-wrap: wrap;
         width: 100%;
         max-width: 600px;
+    }
+
+    .home_section1 .contact_us {
+        font-size: 32px;
+        line-height: 32px;
+        width: 277px;
+    }
+
+    .section7 .yellow_btn::after {
+        right: 15%;
     }
 }
 
@@ -1571,6 +1634,8 @@ body {
         width: 100%;
     }
 
-
+    .section7 .yellow_btn::after {
+        right: 6%;
+    }
 
 }
