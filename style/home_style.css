@@ -771,24 +771,27 @@ body {
 .accordion-button {
     color: #5C6E83;
     background-color: transparent;
-    box-shadow: 0 6px 48px rgb(0 0 0 / 12%);
+    /*    box-shadow: 0 6px 48px rgb(0 0 0 / 12%);*/
     font-size: 23px;
-    padding: 49px 65px;
+    padding: 0;
+    /*    padding: 49px 65px;*/
     border: none
 }
 
 .accordion-button:not(.collapsed) {
     color: #5C6E83;
     background-color: white;
-    box-shadow: 0 6px 46px rgb(0 0 0 / 12%);
     font-size: 23px;
-    padding: 49px 65px;
+    padding: 0;
     border: none
 }
 
 .accordion-item {
     border: none;
-    margin: 0 0 20px
+    margin: 0 0 20px;
+    background-color: white;
+    box-shadow: 0 6px 46px rgb(0 0 0 / 12%);
+    padding: 49px 65px;
 }
 
 .accordion-button p {
@@ -805,7 +808,7 @@ body {
 
 .accordion-body {
     background-color: white;
-    padding: 20px 65px;
+    padding: 0;
     font-size: 23px;
     font-weight: 400;
     line-height: 27.6px;
@@ -1112,7 +1115,6 @@ body {
     .accordion-button:not(.collapsed) {
         font-size: 32px;
         line-height: 38px;
-        padding: 34px 50px
     }
 
     .accordion-body {
@@ -1468,7 +1470,16 @@ body {
     .accordion-button:not(.collapsed) {
         font-size: 28px;
         line-height: 30px;
+
+    }
+
+    .accordion-item {
         padding: 34px 40px
+    }
+    .accordion-body
+    {
+        font-size: 28px;
+        line-height: 30px;
     }
 
     .accordion-button p {
