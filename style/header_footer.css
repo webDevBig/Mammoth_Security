@@ -624,7 +624,7 @@ footer .row_box:last-of-type {
     nav.main_menu {
         width: 85vw;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         background-color: #2C6FBC;
