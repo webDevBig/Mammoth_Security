@@ -1,0 +1,565 @@
+body {
+    background-image: url(../img/bg_individual_location.png)
+}
+
+.map_section {
+    width: 100vw;
+    height: 575px;
+    display: flex;
+    justify-content: center;
+    background-color: #2C6FBD;
+    position: relative
+}
+
+.map_section .row_box {
+    width: 100%;
+    max-width: 1275px;
+    display: flex;
+    justify-content: flex-start
+}
+
+.map_section .text_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.map_section .h1 {
+    color: white;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 65px
+}
+
+.map_section .text {
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    margin: 25px 0 0
+}
+
+.map_section .img_box {
+    width: 58.5vw;
+    max-width: 1130px;
+    height: 100%;
+    background-image: url(../img/new-britain-map-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    z-index: 0
+}
+
+.video_section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0
+}
+
+.video_section .row_box {
+    padding: 60px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.video_section .video {
+    width: 711px;
+    height: 386px;
+    background-image: url(../img/video.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.video_section .text_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 571px;
+    margin: 0 0 0 30px
+}
+
+.video_section .h3 {
+    font-size: 42px;
+    color: #2C6FBD;
+    line-height: 50px;
+    border-bottom: 1px solid #E3E3E3;
+    padding: 0 0 10px;
+    font-weight: 400
+}
+
+.video_section .text {
+    font-size: 23px;
+    color: #5C6E83;
+    line-height: 27px;
+    margin: 10px 0 0;
+    font-weight: 400
+}
+
+.we_do_section2 {
+    padding: 100px 0
+}
+
+.we_do_section2 .we_do_clm {
+    margin: 50px 0 60px 0
+}
+
+.we_do_clm:nth-of-type(2),
+.we_do_clm:nth-of-type(3),
+.we_do_clm:nth-of-type(4) {
+    margin: 50px 0 60px -60px
+}
+
+.security_Assessment_Section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/baner1.png);
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #2c6fbd;
+    padding: 70px 0 50px
+}
+
+.security_Assessment_Section .row_box {
+    width: 100%;
+    max-width: 1275px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.security_Assessment_Section .big_title {
+    color: white;
+    font-size: 65px;
+    font-weight: 200;
+    line-height: 75px;
+    width: 40%
+}
+
+.security_Assessment_Section .big_title span {
+    font-weight: bold;
+    color: #1F2A38
+}
+
+.security_Assessment_Section .title {
+    color: white;
+    font-size: 46px;
+    line-height: 54px;
+    font-weight: 200
+}
+
+.security_Assessment_Section .list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 35px 0 0
+}
+
+.security_Assessment_Section li {
+    font-size: 32px;
+    color: white;
+    line-height: 55px;
+    font-weight: 400;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 43px
+}
+
+.security_Assessment_Section li::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/verified.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0
+}
+
+.security_Assessment_Section li span {
+    color: #1E2329;
+    font-weight: bold;
+    margin: 0 0 0 8px
+}
+
+.industry_solutions_section .row_box {
+    justify-content: center
+}
+
+.industry_solutions_section .box_item {
+    margin: 0 5px;
+    width: 310px
+}
+
+.industry_solutions_section {
+    padding: 150px 0 0
+}
+
+.section3 .text_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.section3 .we_do_clm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto
+}
+
+.section3 .circle_box {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    background-color: #2C6FBD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px
+}
+
+.section3 .circle_box img {
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    border: 11px solid white;
+    background-color: white
+}
+
+.section3 .we_do_clm p {
+    font-size: 28px;
+    line-height: 33px;
+    color: #1E2329;
+    text-align: center
+}
+
+.section3 .we_do_clm:nth-of-type(2) {
+    margin: 50px 0 0
+}
+
+.section3 .item .text {
+    font-size: 25px;
+    color: #5C6E83;
+    padding: 34px 40px
+}
+
+.section3 .item {
+    max-width: 812px
+}
+
+.section3 .item img {
+    border-right: 3px solid #2C6FBD;
+    max-width: 170px
+}
+
+.section3 {
+    padding: 180px 0 140px
+}
+
+.section6 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 140px
+}
+
+.section6 .row_box {
+    width: 100%;
+    max-width: 1275px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.section6 .circle_box {
+    width: 529px;
+    height: 529px;
+    border-radius: 50%;
+    background-color: white;
+    border: 8px solid #2C6FBD;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.section6 .circle_box img {
+    width: 92%;
+    height: 92%
+}
+
+.section6 .text_box {
+    font-size: 23px;
+    color: #5C6E83;
+    padding: 0 9px 0 44px;
+    margin: 45px 0 0
+}
+
+@media all and (max-width:1280px) {
+    .map_section .row_box {
+        max-width: 1024px
+    }
+
+    .map_section .h1 {
+        font-size: 65px
+    }
+
+    .video_section .video,
+    .video_section .text_box {
+        width: 50%
+    }
+
+    .video_section .row_box {
+        width: 100%
+    }
+
+    .security_Assessment_Section .row_box {
+        padding: 0 20px
+    }
+
+    .section6 .row_box {
+        padding: 0 54px;
+        max-width: 100%
+    }
+
+    .section3 .do_box {
+        max-width: 1024px
+    }
+
+    .section3 .circle_box {
+        width: 306px;
+        height: 306px
+    }
+
+    .section3 .do_item {
+        font-size: 20px
+    }
+
+    .section6 .circle_box {
+        width: 429px;
+        height: 429px
+    }
+}
+
+@media all and (max-width:1024px) {
+    .map_section .row_box {
+        max-width: 990px
+    }
+
+    .map_section .h1 {
+        font-style: normal
+    }
+
+    .map_section {
+        padding: 0 0 0 55px
+    }
+
+    .map_section .img_box {
+        width: 100%;
+        max-width: 50%
+    }
+
+    .video_section .row_box {
+        padding: 60px 20px 0
+    }
+
+    .security_Assessment_Section .row_box {
+        flex-direction: column
+    }
+
+    .security_Assessment_Section .big_title {
+        width: 100%;
+        margin: 0 0 30px;
+        text-align: center
+    }
+
+    .section3 .text_box {
+        flex-direction: row
+    }
+
+    .section3 {
+        padding: 50px 0 140px
+    }
+
+    .section3 .we_do_clm:nth-of-type(2) {
+        margin: 0 0 0 30px
+    }
+}
+
+@media all and (max-width:900px) {
+    .map_section .h1 {
+        font-size: 48px
+    }
+
+    .map_section .text {
+        font-size: 23px
+    }
+
+    .video_section .h1 {
+        width: 90%;
+        text-align: center
+    }
+
+    .section3 .row_box {
+        flex-wrap: wrap;
+        padding: 0 20px;
+        justify-content: center
+    }
+
+    .section3 .circle_box {
+        width: 320px;
+        height: 320px
+    }
+
+    .section3 .do_item {
+        font-size: 30px
+    }
+
+    .industry_solutions_section .box_item {
+        width: 33%;
+        margin: 0
+    }
+
+    .industry_solutions_section .row_box {
+        justify-content: space-between
+    }
+
+    .section6 .h1 {
+        text-align: center
+    }
+
+    .section6 .row_box {
+        flex-direction: column
+    }
+
+    .section6 .circle_box {
+        width: 350px;
+        height: 350px;
+        margin: 20px 0 0
+    }
+
+    .section6 .text_box {
+        padding: 0 44px
+    }
+}
+
+@media all and (max-width:500px) {
+    .map_section {
+        flex-direction: column;
+        height: auto;
+        padding: 0
+    }
+
+    .map_section .text_box {
+        align-items: center
+    }
+
+    .map_section .row_box {
+        flex-direction: column;
+        padding: 30px 0 0
+    }
+
+    .map_section .img_box {
+        max-width: 100%;
+        margin: 30px 0 0;
+        position: relative;
+        height: 250px
+    }
+
+    .video_section .row_box {
+        flex-direction: column
+    }
+
+    .video_section .video,
+    .video_section .text_box {
+        width: 100%
+    }
+
+    .video_section .text_box {
+        margin: 30px 0 0
+    }
+
+    .we_do_clm:nth-of-type(2),
+    .we_do_clm:nth-of-type(3),
+    .we_do_clm:nth-of-type(4),
+    .we_do_section2 .we_do_clm {
+        margin: 20px 0;
+        align-items: center
+    }
+
+    .security_Assessment_Section .title {
+        text-align: center;
+        font-size: 36px;
+        line-height: 45px
+    }
+
+    .security_Assessment_Section li {
+        font-size: 26px;
+        line-height: 35px;
+        display: inline-block;
+        margin: 0 0 10px
+    }
+
+    .security_Assessment_Section li::before {
+        top: 8px
+    }
+
+    .security_Assessment_Section .title br {
+        display: none
+    }
+
+    .industry_solutions_section .box_item {
+        width: 49%;
+        margin: 0 0 10px
+    }
+
+    .section3 .text_box {
+        flex-direction: column
+    }
+
+    .section3 .we_do_clm:nth-of-type(2) {
+        margin: 0
+    }
+
+    .section3 .do_box {
+        max-width: 90%
+    }
+
+    .section3 .circle_box {
+        width: 300px;
+        height: 300px;
+        margin: 40px 0px
+    }
+
+    .section3 .do_item {
+        font-size: 26px
+    }
+
+    .section6 .circle_box {
+        width: 300px;
+        height: 300px
+    }
+
+    .section6 .text_box {
+        padding: 0
+    }
+}

@@ -327,7 +327,7 @@ nav.main_menu .sub_menu li:hover {
 
 li > .open_sub_menu:after {
     content: '';
-    background-image: url(../img/arrow_down.svg);
+    background-image: url(../img/icons/arrow_down.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -352,7 +352,7 @@ li > .main_menu_item:only-child:after {
 .mobile_btn .menu_icon {
     height: 43px;
     width: 63px;
-    background-image: url(../img/menu-24px.png);
+    background-image: url(../img/icons/menu-24px.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -399,7 +399,7 @@ li > .main_menu_item:only-child:after {
     opacity: 0;
     transition: all .8s;
     content: '';
-    background-image: url(../img/arrow_forward.svg);
+    background-image: url(../img/icons/arrow_forward.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 12px;
@@ -672,7 +672,7 @@ footer .row_box:last-of-type {
         height: 30px;
         right: 6vw;
         position: absolute;
-        background-image: url(../img/keyboard_arrow_down-white.png)
+        background-image: url(../img/icons/keyboard_arrow_down-white.png)
     }
 
     nav.main_menu ul li {
@@ -743,7 +743,7 @@ footer .row_box:last-of-type {
         height: 96px;
         min-height: 96px;
         margin: 60px 0 70px 60px;
-        background-image: url(../img/close-24px.png);
+        background-image: url(../img/icons/close-24px.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover
@@ -820,7 +820,7 @@ footer .row_box:last-of-type {
     .mobile_btn .menu_icon {
         height: 23px;
         width: 32px;
-        background-image: url(../img/menu-24px.png);
+        background-image: url(../img/icons/menu-24px.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -924,7 +924,7 @@ footer .row_box:last-of-type {
     .mobile_btn .menu_icon {
         height: 36px;
         width: 50px;
-        background-image: url(../img/menu-24px.png);
+        background-image: url(../img/icons/menu-24px.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

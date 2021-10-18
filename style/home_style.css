@@ -47,25 +47,32 @@ body {
     padding: 25px 0 0
 }
 
-.home_section1 .logo_boxes {
-    margin: 100px 0 0
-}
-
 .home_section1 .logo_boxes div.img_line {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 20px 0
+    margin: 20px 0;
+    min-width: 20%
 }
 
-.home_section1 .logo_boxes div.img_line:first-of-type {
-    width: 92%
+.home_section1 .logo_boxes {
+    margin: 100px 0 0
 }
 
-.home_section1 .logo_boxes div.img_line_mobile {
-    display: none
+.customer_logo:nth-of-type(1),
+.customer_logo:nth-of-type(3) {
+    min-width: 20%;
+    justify-content: flex-start;
+    margin: 0 0 20px
+}
+
+.customer_logo:nth-of-type(2),
+.customer_logo:nth-of-type(4) {
+    min-width: 25%;
+    justify-content: flex-start;
+    margin: 0 0 20px
 }
 
 .customer_logo {
@@ -102,31 +109,31 @@ body {
 }
 
 .customer_logo:nth-of-type(3) img {
-    width: 80px
+    width: 86px
 }
 
 .customer_logo:nth-of-type(4) img {
-    width: 148px
+    width: 153px
 }
 
 .customer_logo:nth-of-type(5) img {
-    width: 124px
+    width: 92px
 }
 
 .customer_logo:nth-of-type(6) img {
-    width: 116px
+    width: 122px
 }
 
 .customer_logo:nth-of-type(7) img {
-    width: 111px
+    width: 114px
 }
 
 .customer_logo:nth-of-type(8) img {
-    width: 115px
+    width: 120px
 }
 
 .customer_logo:nth-of-type(9) img {
-    width: 139px
+    width: 135px
 }
 
 .customer_logo:hover {
@@ -180,7 +187,8 @@ body {
     margin: 95px 0 60px 0;
     transition: all 1s;
     position: relative;
-    z-index: 4
+    z-index: 4;
+    cursor: pointer
 }
 
 .we_do_section2 .we_do_clm:hover {
@@ -209,7 +217,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative
+    position: relative;
+    filter: grayscale(1);
+    transition: filter 1s
+}
+
+.we_do_section2 .we_do_clm:hover .circle_box {
+    filter: grayscale(0)
 }
 
 .we_do_clm:nth-of-type(2) {
@@ -805,14 +819,14 @@ body {
     height: 24px;
     margin-left: auto;
     content: "";
-    background-image: url(../img/faq_arrow.svg);
+    background-image: url(../img/icons/faq_arrow.svg);
     background-repeat: no-repeat;
     background-size: cover;
     transition: transform .2s ease-in-out
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url(../img/faq_arrow.svg);
+    background-image: url(../img/icons/faq_arrow.svg);
     transform: rotate(-180deg)
 }
 
@@ -911,13 +925,16 @@ body {
     }
 
     .home_section1 .logo_boxes div.img_line {
-        display: none
-    }
-
-    .home_section1 .logo_boxes div.img_line_mobile {
         display: flex;
         flex-wrap: wrap;
         width: 600px
+    }
+
+    .customer_logo:nth-of-type(1),
+    .customer_logo:nth-of-type(3),
+    .customer_logo:nth-of-type(2),
+    .customer_logo:nth-of-type(4) {
+        justify-content: center
     }
 
     .customer_logo {
@@ -1613,6 +1630,4 @@ body {
         left: 0;
         width: 100%
     }
-
-    .section7 .yellow_btn::after {}
 }
