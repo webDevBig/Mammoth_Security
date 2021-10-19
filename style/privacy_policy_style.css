@@ -1,0 +1,52 @@
+body {
+    background-image: none;
+}
+
+.privacy_policy_section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45px 0;
+}
+
+.privacy_policy_section .h1 {
+    margin: 0 0 30px;
+}
+
+.privacy_policy_section .row_box {
+    width: 100%;
+    max-width: 1275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.privacy_policy_section .h3 {
+    width: 100%;
+    font-weight: 400;
+    font-size: 42px;
+    color: #2C6FBD;
+    line-height: 50px;
+    padding: 45px 0 10px;
+    border-top: 1px solid #E3E3E3;
+}
+
+.privacy_policy_section .text {
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #5C6E83;
+    margin: 0 0 30px;
+}
+
+@media all and (max-width:1024px) {
+    .privacy_policy_section .row_box {
+        max-width: 900px;
+    }
+}
+@media all and (max-width:600px) {
+    .privacy_policy_section .row_box {
+        max-width: 310px;
+    }
+}
