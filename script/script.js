@@ -22,8 +22,8 @@ document.querySelectorAll(".menu_item").forEach(
 function reveal(e, isEnter) {
     var element = document.getElementById("opened_menu_box");
     if (isEnter) element.classList.add("active");
-    else element.classList.remove("active");  
-  
+    else element.classList.remove("active");
+
     console.log('event', e.getBoundingClientRect())
 }
 
@@ -34,7 +34,6 @@ function eventListener(box) {
     document.getElementById("opened_menu_box").addEventListener("mouseenter", () => reveal(box, true));
     document.getElementById("opened_menu_box").addEventListener("mouseleave", () => reveal(box, false));
 }
-
 
 
 
@@ -108,6 +107,7 @@ function eventListener3(box3) {
 //open burglar Alarm menu
 document.querySelectorAll(".menu_item4").forEach(
     box4 => eventListener4(box4))
+
 
 function reveal4(e, isEnter) {
     var element = document.getElementById("burglar_Alarm_menu");

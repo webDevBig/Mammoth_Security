@@ -1,0 +1,31 @@
+body {
+    background-image: url(../img/Industry_Solutions_bg.png);
+}
+
+.industry_solutions_section {
+    padding: 0 0 97px;
+}
+
+.industry_solutions_section .row_box {
+    padding: 0;
+}
+
+.splide {
+    margin: 120px 0;
+}
+
+.section7 {
+    padding: 120px 0;
+}
+
+@media all and (max-width:1024px) {
+    body {
+        background-size: 107%;
+    }
+}
+
+@media all and (max-width:900px) {
+    body {
+        background-image: none;
+    }
+}
