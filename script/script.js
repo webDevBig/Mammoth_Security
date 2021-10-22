@@ -3,7 +3,7 @@ var open_sub_menu = document.querySelectorAll('.open_sub_menu');
     el.onclick = function (e) {
         el.parentElement.querySelector('.mobile_sub_menu_box').classList.toggle('mobile_sub_menu_box_open')
         el.querySelector('.mobile_arrow').classList.toggle('arrow_transform')
-        el.classList.toggle('active') 
+        el.classList.toggle('active')
     }
 });
 
@@ -12,18 +12,18 @@ var open_sub_sub_menu = document.querySelectorAll('.open_sub_sub_menu');
     el.onclick = function (e) {
         el.parentElement.querySelector('.sub_menu').classList.toggle('sub_menu_open')
         el.querySelector('.mobile_arrow').classList.toggle('arrow_transform')
-        
-        el.classList.toggle('active') 
+
+        el.classList.toggle('active')
     }
 });
 
 var open_menu = document.querySelectorAll('.mobile_btn');
 [].forEach.call(open_menu, function (el) {
     el.onclick = function (e) {
-//        document.querySelector(".main_menu").classList.toggle('mobile_menu_open');
-        
-         document.querySelector(".line_nav_bottom").classList.toggle('open');
+        document.querySelector(".line_nav_bottom").classList.toggle('open')
         document.querySelector("body").classList.toggle('body')
+
+        el.classList.toggle('active')
     }
 });
 //var close_menu = document.querySelectorAll('.close_menu');

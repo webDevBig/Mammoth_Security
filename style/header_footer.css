@@ -255,12 +255,15 @@ nav.main_menu ul li:last-of-type img {
 nav.main_menu ul li:first-of-type img {
     max-width: 46px;
 }
+
 nav.main_menu ul li:nth-of-type(2) img {
     max-width: 32px;
 }
+
 nav.main_menu ul li:nth-of-type(3) img {
     max-width: 78px;
 }
+
 nav.main_menu ul li:nth-of-type(4) img {
     max-width: 85px;
 }
@@ -458,6 +461,15 @@ nav.main_menu .sub_menu li:hover {
     display: none
 }
 
+.mobile_btn {
+    height: 53px;
+    width: 63px;
+    margin: 0 25px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .mobile_btn .menu_icon {
     height: 43px;
     width: 63px;
@@ -465,7 +477,22 @@ nav.main_menu .sub_menu li:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 35px 0 0
+
+    transition: all .5s;
+}
+
+.mobile_btn.active .menu_icon {
+    background-image: url(../img/icons/close24px.png);
+    width: 53px;
+    height: 53px;
+    /*    filter: invert(1);*/
+
+}
+
+.mobile_btn.active .menu_icon:active,
+.mobile_btn.active .menu_icon:hover {
+    outline: none;
+    border: none;
 }
 
 .close_menu,
@@ -763,7 +790,7 @@ nav.main_menu .mobile_arrow {
 
     nav.main_menu {
         width: 100vw;
-        height: 70vh;
+        height: 80vh;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -778,6 +805,8 @@ nav.main_menu .mobile_arrow {
         transform: translate3d(0%, -120%, 0);
         position: fixed;
         transition: all 1s;
+        height: 100vh;
+        justify-content: flex-start;
     }
 
     .line_nav_bottom.open {
@@ -1015,14 +1044,19 @@ nav.main_menu .mobile_arrow {
         transform: translate3d(0%, 293px, 0);
     }
 
+    .mobile_btn {
+        height: 32px;
+        width: 33px;
+    }
+
     .mobile_btn .menu_icon {
         height: 23px;
         width: 32px;
-        background-image: url(../img/icons/menu24px.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0 35px 0 0
+    }
+
+    .mobile_btn.active .menu_icon {
+        width: 33px;
+        height: 32px;
     }
 
     nav.main_menu {
@@ -1115,14 +1149,18 @@ nav.main_menu .mobile_arrow {
         width: 100%
     }
 
-    .mobile_btn .menu_icon {
+    .mobile_btn{
+        height: 50px;
+        width: 50px;
+        margin: 0 0 0
+    }
+     .mobile_btn .menu_icon {
         height: 36px;
         width: 50px;
-        background-image: url(../img/icons/menu24px.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0 0 0
+    }
+     .mobile_btn.active .menu_icon {
+        height: 50px;
+        width: 50px;
     }
 
     .logo .logo_icon {
