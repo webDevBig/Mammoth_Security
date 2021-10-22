@@ -465,7 +465,6 @@ nav.main_menu .sub_menu li:hover {
     height: 53px;
     width: 63px;
     margin: 0 25px 0 0;
-    display: flex;
     justify-content: flex-start;
     align-items: center;
 }
