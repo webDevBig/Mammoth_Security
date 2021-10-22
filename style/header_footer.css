@@ -255,9 +255,14 @@ nav.main_menu ul li:last-of-type img {
 nav.main_menu ul li:first-of-type img {
     max-width: 46px;
 }
-
+nav.main_menu ul li:nth-of-type(2) img {
+    max-width: 32px;
+}
 nav.main_menu ul li:nth-of-type(3) img {
     max-width: 78px;
+}
+nav.main_menu ul li:nth-of-type(4) img {
+    max-width: 85px;
 }
 
 nav.main_menu ul li:nth-of-type(3) .img_cont {
