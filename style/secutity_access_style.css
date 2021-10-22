@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/Security_Access_bg.png);
+    background-image: url(../img/securityaccessbg.png);
     background-position: -117% 50%;
 }
 
@@ -52,7 +52,7 @@ body {
     width: 55%;
     max-height: 900px;
     height: 58vw;
-    background-image: url(../img/sec1_security_access.png);
+    background-image: url(../img/sec1securityaccess.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,7 +87,7 @@ body {
     width: 590px;
 }
 
-.section2 .h3 {
+.section2 .h2 {
     font-weight: 400;
     font-size: 42px;
     line-height: 50px;
@@ -104,7 +104,7 @@ body {
 }
 
 .section2 .img_box {
-    width: auto;
+    width: 492px;
     border-radius: 50%;
     border: 8px solid #2C6FBD;
     display: flex;

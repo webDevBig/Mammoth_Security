@@ -3,4 +3,339 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../img/ipcamerasec1.png);
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 573px;
+    height: 30vw;
+    position: relative;
+}
+
+.section1::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.section1 .main_title {
+    color: white;
+    font-size: 80px;
+    font-weight: 200;
+    line-height: 89px;
+    position: relative;
+    z-index: 1;
+}
+
+.section2 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 .row_box {
+    width: 100%;
+    max-width: 1275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 img {
+    max-width: 780px;
+}
+
+.section2 .text_box {
+    margin: 0 0 0 -80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.section2 .h3 {
+    width: 100%;
+    font-size: 42px;
+    color: #2C6FBD;
+    line-height: 50px;
+    padding: 0 0 12px;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.section2 .text {
+    color: #5C6E83;
+    font-size: 23px;
+    line-height: 27px;
+    width: 658px;
+    padding: 19px 0;
+}
+
+.section3 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C6FBD;
+    padding: 70px 0;
+}
+
+.section3 .row_box {
+    width: 100%;
+    max-width: 1275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    height: 426px;
+    border-right: 1px solid white;
+    padding: 0 30px;
+}
+
+.section3 .box:last-of-type {
+    border: none;
+}
+
+.section3 .img_box {
+    height: 98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 35px;
+
+}
+
+.section3 .title {
+    color: white;
+    font-size: 25px;
+    line-height: 30px;
+    margin: 0 0 13px;
+    text-align: center;
+}
+
+.section3 .text {
+    color: white;
+    font-size: 23px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.section4 {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0 55px;
+}
+
+.section4 .row_box {
+    width: 100%;
+    max-width: 1275px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 84px 0;
+}
+
+.section4 .h3 {
+    font-size: 42px;
+    line-height: 50px;
+    color: #2C6FBD;
+    padding: 0 0 12px;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.section4 .text {
+    font-size: 23px;
+    line-height: 27px;
+    color: #5C6E83;
+    max-width: 658px;
+    padding: 18px 0;
+}
+
+.section7 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 140px 0
+}
+
+.section7 .row_box {
+    max-width: 1420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.section7 .image {
+    max-width: 666px;
+    margin: 6px -33px -20px 0px
+}
+
+.section7 .h1 {
+    color: #1E2329;
+    font-size: 55px;
+    font-weight: 200;
+    margin: 0 0 45px
+}
+
+.section7 .form_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+
+.section7 input {
+    width: 375px;
+    height: 50px;
+    background-color: #FFF;
+    border: 1px solid #B7C3D4;
+    border-radius: 30px;
+    outline: none;
+    color: #485768;
+    font-size: 15px;
+    padding: 0 40px;
+    margin: 0 0 10px;
+    font-family: 'Nunito', sans-serif
+}
+
+.section7 input:last-of-type {
+    margin: 0 0 30px
+}
+
+.section7 .secure_btn {
+    width: 275px;
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px
+}
+
+.section7 .yellow_btn::after {
+    height: 55px
+}
+
+.section7 .text {
+    padding: 60px 0 0;
+    color: #5C6E83;
+    font-size: 20px
+}
+
+.section7 .img_box {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0
+}
+
+@media all and (max-width:1024px) {
+    .section7 .row_box {
+        max-width: 990px
+    }
+
+    .section7 .image {
+        max-width: 520px;
+        margin: 20px -36px -20px -64px
+    }
+
+    .section7 input {
+        width: 435px;
+        height: 58px;
+        font-size: 32px;
+        line-height: 32px;
+        color: #979BA0
+    }
+
+    .section7 .yellow_btn::after {
+        height: 35px
+    }
+
+    .section7 .secure_btn {
+        height: 63px;
+        width: 355px;
+        font-size: 32px;
+        margin: 20px 0 0
+    }
+
+    .section7 .yellow_btn::after {
+        height: 53px
+    }
+
+    .section7 .text {
+        padding: 40px 0 0;
+        font-size: 19px
+    }
+
+    .section7 .img_box {
+        width: 74%
+    }
+
+    .section7 .h1 {
+        font-size: 45px;
+        margin: 0 0 70px;
+        font-style: normal;
+        font-weight: 200
+    }
+}
+
+@media all and (max-width:786px) {
+    .section7 .image {
+        max-width: 450px;
+        margin: 20px -36px -20px -64px
+    }
+
+    .section7 input {
+        width: 385px;
+        height: 58px;
+        font-size: 26px;
+        color: #979BA0
+    }
+}
+
+@media all and (max-width:600px) {
+    .section7 .row_box {
+        flex-direction: column
+    }
+
+    .section7 .image {
+        max-width: 100%;
+        margin: 0 0 30px
+    }
+
+    .section7 .h1 {
+        font-size: 30px
+    }
+
+    .section7 input,
+    .section7 .secure_btn {
+        width: 100%;
+        font-size: 25px;
+        line-height: 25px
+    }
+
+    .section7 .form_box {
+        padding: 0 20px
+    }
+
+    .section7 .img_box {
+        width: 100%
+    }
+
+    .section7 .yellow_btn::after {
+        height: 24px
+    }
 }

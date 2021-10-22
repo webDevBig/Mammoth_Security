@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/bg_individual_location.png)
+    background-image: url(../img/bgindividuallocation.png)
 }
 
 .map_section {
@@ -43,7 +43,7 @@ body {
     width: 58.5vw;
     max-width: 1130px;
     height: 100%;
-    background-image: url(../img/new-britain-map-image.jpg);
+    background-image: url(../img/newbritainmapimage.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
