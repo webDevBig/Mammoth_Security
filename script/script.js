@@ -17,23 +17,44 @@ var open_sub_sub_menu = document.querySelectorAll('.open_sub_sub_menu');
     }
 });
 
+
+
+var applied = false;
+let elem = document.getElementById("header");
 var open_menu = document.querySelectorAll('.mobile_btn');
 [].forEach.call(open_menu, function (el) {
     el.onclick = function (e) {
-        document.querySelector(".line_nav_bottom").classList.toggle('open')
-        document.querySelector("body").classList.toggle('body')
+        let coords = elem.getBoundingClientRect();
 
-        el.classList.toggle('active')
+
+        if (!applied) {
+
+            document.querySelector(".line_nav_bottom").classList.toggle('open')
+            document.querySelector("body").classList.toggle('body')
+
+            el.classList.toggle('active')
+
+            document.querySelector(".line_nav_bottom").style.transform = "translate3d(0," + coords.bottom + "px, 0"
+
+            document.querySelector("nav.main_menu").style.height = "calc(100vh - " + coords.bottom + "px )"
+
+
+            applied = true;
+
+        } else { // and second click 
+
+            document.querySelector(".line_nav_bottom").classList.toggle('open')
+            document.querySelector("body").classList.toggle('body')
+
+            el.classList.toggle('active')
+
+            document.querySelector(".line_nav_bottom").style.transform = "translate3d(0, -120%, 0"
+
+            applied = false;
+
+        }
     }
 });
-//var close_menu = document.querySelectorAll('.close_menu');
-//[].forEach.call(close_menu, function (el) {
-//    el.onclick = function (e) {
-//        document.querySelector(".main_menu").classList.toggle('mobile_menu_open');
-//        document.querySelector("body").classList.toggle('body')
-//    }
-//});
-
 
 //open  menu
 
@@ -52,16 +73,10 @@ function eventListener(box) {
     box.addEventListener("mouseenter", () => reveal(box, true))
     box.addEventListener("mouseleave", () => reveal(box, false))
 
+
     document.getElementById("opened_menu_box").addEventListener("mouseenter", () => reveal(box, true));
     document.getElementById("opened_menu_box").addEventListener("mouseleave", () => reveal(box, false));
 }
-
-
-
-
-
-
-
 
 
 //open Security Cameras menu
@@ -78,7 +93,6 @@ function reveal1(e, isEnter) {
 function eventListener1(box1) {
     box1.addEventListener("mouseenter", () => reveal1(box1, true))
     box1.addEventListener("mouseleave", () => reveal1(box1, false))
-
     document.getElementById("security_camera_menu").addEventListener("mouseenter", () => reveal1(box1, true));
     document.getElementById("security_camera_menu").addEventListener("mouseleave", () => reveal1(box1, false));
 }
@@ -113,7 +127,7 @@ function reveal3(e, isEnter) {
     var element = document.getElementById("structured_Cabling_menu");
     if (isEnter) element.classList.add("active");
     else element.classList.remove("active");
-    console.log('event', e.getBoundingClientRect())
+    //    console.log('event', e.getBoundingClientRect())
 }
 
 function eventListener3(box3) {
@@ -144,8 +158,6 @@ function eventListener4(box4) {
     document.getElementById("burglar_Alarm_menu").addEventListener("mouseleave", () => reveal4(box4, false));
 }
 
-
-
 //open fire Alarm menu
 document.querySelectorAll(".menu_item5").forEach(
     box5 => eventListener5(box5))
@@ -163,3 +175,16 @@ function eventListener5(box5) {
     document.getElementById("fire_Alarm_menu").addEventListener("mouseenter", () => reveal5(box5, true));
     document.getElementById("fire_Alarm_menu").addEventListener("mouseleave", () => reveal5(box5, false));
 }
+
+$('.security_cameras_link').click(function () {
+    document.location.href = "security_access_page.html";
+})
+
+
+var choose_category = document.querySelectorAll('.category');
+[].forEach.call(choose_category, function (el) {
+    el.onclick = function (e) {
+       
+        el.classList.toggle('active')
+    }
+});

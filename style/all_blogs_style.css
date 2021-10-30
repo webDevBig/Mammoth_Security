@@ -1,0 +1,386 @@
+body {
+    background-image: url(../img/blogs/blogmammothbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.section1 {
+    width: 100vw;
+    height: 385px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/blogs/blogsimgsec1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative
+}
+
+.section1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 0
+}
+
+.section1 .h1 {
+    color: #fff;
+    font-size: 80px;
+    line-height: 89px;
+    font-weight: 200;
+    position: relative;
+    z-index: 1;
+    max-width: 890px;
+    text-align: center
+}
+
+.gray_sections {
+    width: 100vw;
+    background-color: #f7f7f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 52px 0
+}
+
+.gray_sections .row_content {
+    width: 100%;
+    max-width: 1275px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+
+.gray_sections .medium_post {
+    width: 613px
+}
+
+.img_box {
+    width: 100%;
+    height: 344px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 10px
+}
+
+.tag {
+    padding: 16px 32px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400
+}
+
+.title {
+    font-size: 31px;
+    color: #1e2329;
+    margin: 15px 0 0
+}
+
+.text {
+    font-size: 20px;
+    line-height: 27px;
+    color: #1e2329
+}
+
+.post .box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 0
+}
+
+.post .read_more {
+    color: #f26d7d;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration: none
+}
+
+.post .read_more:hover {
+    text-decoration: underline
+}
+
+.post .date {
+    font-size: 14px;
+    line-height: 1;
+    color: #4d4d4d
+}
+
+.section2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0 95px
+}
+
+.section2 .row_content {
+    width: 100%;
+    max-width: 1275px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap
+}
+
+.section2 .big_post {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 503px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    background-size: cover
+}
+
+.section2 .big_post a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1
+}
+
+.section2 .big_post::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 0
+}
+
+.section2 .big_post .box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    z-index: 2
+}
+
+.section2 .h2 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    z-index: 1
+}
+
+.section2 .date {
+    color: #fff;
+    font-size: 20px;
+    line-height: 27px
+}
+
+.small_post {
+    width: 402px;
+    margin: 30px 0 45px
+}
+
+.small_post .text {
+    font-size: 23px;
+    line-height: 28px;
+    padding: 7px 0 0
+}
+
+.small_post .box {
+    margin: 12px 0 0
+}
+
+.small_post .date {
+    color: #4d4d4d;
+    font-size: 14px;
+    line-height: 1
+}
+
+.callform_section {
+    width: 100vw;
+    height: 565px;
+    background-color: #2c6fbd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.callform_section .h1 {
+    color: #fff;
+    font-size: 80px;
+    line-height: 89px;
+    font-weight: 200
+}
+
+.callform_section .h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 400
+}
+
+.callform_section .email_input {
+    width: 662px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: none;
+    outline-style: none;
+    margin: 48px 0 25px;
+    padding: 0 33px;
+    color: #485768;
+    font-size: 15px
+}
+
+.callform_section .email_input:active,
+.callform_section .email_input:focus {
+    outline: 0;
+    border: none;
+    box-shadow: none
+}
+
+.callform_section .submit_btn {
+    padding: 18px 58px
+}
+
+@media all and (max-width:1440px) {
+    body {
+        background-size: contain;
+    }
+}
+
+@media all and (max-width:1280px) {
+
+    .gray_sections .row_content,
+    .section2 .row_content {
+        max-width: 90%
+    }
+
+    .gray_sections .medium_post {
+        width: 48%
+    }
+
+    .small_post {
+        width: 32%
+    }
+}
+
+@media all and (max-width:1024px) {
+    body {
+        background-image: none;
+    }
+}
+
+@media all and (max-width:768px) {
+    .small_post {
+        width: 48%
+    }
+}
+
+@media all and (max-width:600px) {
+    .section1 {
+        height: 500px
+    }
+
+    .section1 .h1 {
+        max-width: 90%;
+        font-size: 72px;
+        line-height: 84px
+    }
+
+    .gray_sections .medium_post {
+        width: 100%
+    }
+
+    .gray_sections .medium_post:first-of-type {
+        margin: 0 0 40px
+    }
+
+    .gray_sections .row_content {
+        flex-wrap: wrap
+    }
+
+    .section2 .h2 {
+        font-size: 50px
+    }
+
+    .small_post {
+        width: 100%
+    }
+
+    .small_post {
+        margin: 30px 0 0
+    }
+
+    .callform_section .email_input {
+        width: 90%
+    }
+}
+
+@media all and (max-width:425px) {
+    .section2 .h2 {
+        font-size: 40px
+    }
+}
+
+@media all and (max-width:375px) {
+    .callform_section .h1 {
+        font-size: 65px
+    }
+
+    .callform_section .h2 {
+        text-align: center
+    }
+
+    .section1 .h1 {
+        font-size: 63px;
+        line-height: 69px
+    }
+
+    .section2 .h2 {
+        font-size: 37px
+    }
+
+    .section2 .big_post .box {
+        flex-direction: column-reverse;
+        margin: 30px 0 0
+    }
+
+    .section2 .big_post .tag {
+        margin: 30px 0 0
+    }
+
+    .section2 .big_post {
+        height: 550px
+    }
+
+    .section2 .big_post a {
+        justify-content: flex-start;
+        padding: 50px 0 0
+    }
+}

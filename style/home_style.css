@@ -1,5 +1,5 @@
 body {
-    background-image: url(../img/bg.png);
+    background-image: url(../img/home/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 97%
@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    padding: 0px 80px 20px 0;
+    padding: 0 80px 20px 0;
     position: relative
 }
 
@@ -37,8 +37,14 @@ body {
 }
 
 .home_section1 .contact_us {
-    height: 55px;
-    width: 216px
+   padding: 15px 62px;
+    text-decoration: none;
+    transition: all 1s;
+    display: inline-block
+}
+.home_section1 .contact_us:hover
+{
+   transform: scale(1.04);
 }
 
 .home_section1 .text_box {
@@ -62,7 +68,8 @@ body {
 }
 
 .customer_logo:nth-of-type(1),
-.customer_logo:nth-of-type(3) {
+.customer_logo:nth-of-type(3),
+.customer_logo:nth-of-type(5) {
     min-width: 20%;
     justify-content: flex-start;
     margin: 0 0 20px
@@ -76,13 +83,14 @@ body {
 }
 
 .customer_logo {
-    transition: all 1s;
+    transition: transform .7s, opacity 1s;
     cursor: pointer;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0.5
+    opacity: .5;
+    transform: scale3d(1, 1, 1)
 }
 
 .customer_logo img {
@@ -101,43 +109,52 @@ body {
 }
 
 .customer_logo:nth-of-type(1) img {
-    width: 92px
+    width: 92px;
+    height: 49px
 }
 
 .customer_logo:nth-of-type(2) img {
-    width: 124px
+    width: 124px;
+    height: 47px
 }
 
 .customer_logo:nth-of-type(3) img {
-    width: 86px
+    width: 80px;
+    height: 67px
 }
 
 .customer_logo:nth-of-type(4) img {
-    width: 153px
+    width: 148px;
+    height: 26px
 }
 
 .customer_logo:nth-of-type(5) img {
-    width: 92px
+    width: 109px;
+    height: 80px
 }
 
 .customer_logo:nth-of-type(6) img {
-    width: 122px
+    width: 116px;
+    height: 40px
 }
 
 .customer_logo:nth-of-type(7) img {
-    width: 114px
+    width: 111px;
+    height: 24px
 }
 
 .customer_logo:nth-of-type(8) img {
-    width: 120px
+    width: 115px;
+    height: 47px
 }
 
 .customer_logo:nth-of-type(9) img {
-    width: 135px
+    width: 139px;
+    height: 17px
 }
 
 .customer_logo:hover {
-    transform: scale(1.04);
+    transform: scale3d(1.1, 1.1, 1.1);
     opacity: 1
 }
 
@@ -151,7 +168,7 @@ body {
     height: 842px;
     height: 44vw;
     max-height: 842px;
-    background-image: url(../img/section1img.png);
+    background-image: url(../img/home/section1img.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover
@@ -164,117 +181,15 @@ body {
     top: -62px
 }
 
-.we_do_section2 {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
-}
-
 .h1 {
     font-size: 40px;
-    color: #2C6FBD;
+    color: #2c6fbd;
     font-weight: 600
-}
-
-.we_do_section2 .we_do_clm {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    margin: 95px 0 60px 0;
-    transition: all 1s;
-    position: relative;
-    z-index: 4;
-    cursor: pointer
-}
-
-.we_do_section2 .we_do_clm:hover {
-    transform: scale(1.05)
 }
 
 .h1 span {
     font-weight: 800;
     font-style: italic
-}
-
-.we_do_section2 .row_box {
-    width: 100%;
-    max-width: 1231px;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.we_do_section2 .circle_box {
-    width: 366px;
-    height: 366px;
-    border-radius: 50%;
-    background-color: #2C6FBD;
-    border: 10px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    filter: grayscale(1);
-    transition: filter 1s
-}
-
-.we_do_section2 .we_do_clm:hover .circle_box {
-    filter: grayscale(0)
-}
-
-.we_do_clm:nth-of-type(2) {
-    margin: 95px 0 60px -60px;
-    z-index: 3
-}
-
-.we_do_clm:nth-of-type(3) {
-    margin: 95px 0 60px -60px;
-    z-index: 2
-}
-
-.we_do_clm:nth-of-type(4) {
-    margin: 95px 0 60px -60px;
-    z-index: 1
-}
-
-.we_do_section2 .circle_box .circle_box_img {
-    width: 95%;
-    height: 95%;
-    border-radius: 50%;
-    border: 11px solid white;
-    background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.we_do_section2 .do_box {
-    width: 100%;
-    max-width: 1275px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
-.we_do_section2 .do_item p {
-    margin: 0 5px
-}
-
-.we_do_section2 .do_item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #1E2329;
-    font-size: 26px;
-    margin: 55px 0 0
-}
-
-.we_do_section2 .do_item .arrow {
-    width: 15px
 }
 
 .section3 {
@@ -293,7 +208,7 @@ body {
 }
 
 .section3 h1 span {
-    color: #2C6FBD
+    color: #2c6fbd
 }
 
 .section3 .items_box {
@@ -308,7 +223,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    box-shadow: 0 6px 48px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 48px rgba(0, 0, 0, .12);
     margin: 0 0 20px
 }
 
@@ -317,19 +232,19 @@ body {
 }
 
 .section3 .item img {
-    border-right: 3px solid #2C6FBD;
+    border-right: 3px solid #2c6fbd;
     max-width: 150px
 }
 
 .section3 .item .text {
     font-size: 23px;
-    color: #5C6E83;
+    color: #5c6e83;
     padding: 30px 35px
 }
 
 .section3 .item .text span {
-    font-weight: bold;
-    color: #2C6FBD
+    font-weight: 700;
+    color: #2c6fbd
 }
 
 .slider_section {
@@ -354,7 +269,7 @@ body {
 
 .splide__slide .user_img {
     border-radius: 50%;
-    border: 10px solid #2C6FBD;
+    border: 10px solid #2c6fbd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,7 +278,7 @@ body {
 }
 
 .splide__slide .user_img img {
-    border: 10px solid white;
+    border: 10px solid #fff;
     width: 100%;
     height: 100%;
     border-radius: 50%
@@ -382,7 +297,7 @@ body {
     font-size: 40px;
     font-style: italic;
     font-weight: 200;
-    color: #5C6E83;
+    color: #5c6e83;
     margin: 0 0 40px;
     position: relative;
     display: flex
@@ -393,8 +308,8 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 623px;
     position: absolute;
-    color: #5C6E83;
-    opacity: 0.09;
+    color: #5c6e83;
+    opacity: .09;
     left: -36%;
     top: -90%
 }
@@ -405,22 +320,22 @@ body {
     font-size: 623px;
     position: absolute;
     transform: rotate(180deg);
-    color: #5C6E83;
-    opacity: 0.09;
+    color: #5c6e83;
+    opacity: .09;
     bottom: -111%;
     right: -11%
 }
 
 .splide__slide .name {
-    color: #2C6FBD;
-    font-weight: bold;
+    color: #2c6fbd;
+    font-weight: 700;
     font-size: 25px;
     display: flex;
     align-items: center
 }
 
 .splide__slide .text {
-    color: #1E2329;
+    color: #1e2329;
     font-size: 25px;
     margin: 0 0 0 5px;
     font-weight: 400
@@ -430,13 +345,13 @@ body {
     width: 46px;
     height: 46px;
     border-radius: 0;
-    border: 1px solid #849DB5;
-    background-color: white;
+    border: 1px solid #849db5;
+    background-color: #fff;
     opacity: 1;
     position: relative;
     top: 0;
     left: 0;
-    transform: translateY(0%)
+    transform: translateY(0)
 }
 
 .splide__arrows {
@@ -451,7 +366,7 @@ body {
 }
 
 .splide__pagination__page {
-    background: #C9D8E9;
+    background: #c9d8e9;
     border: 0;
     border-radius: 50%;
     display: inline-block;
@@ -466,7 +381,7 @@ body {
 }
 
 .splide__pagination__page.is-active {
-    background: #2C6FBD;
+    background: #2c6fbd;
     width: 35px
 }
 
@@ -477,126 +392,10 @@ body {
     bottom: -104px
 }
 
-.baner_box {
-    width: 100vw;
-    height: 446px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2C6FBD;
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url(../img/baner1.png);
-    position: relative
-}
-
 .splide__arrow svg {
     fill: #000;
     height: 19px;
     width: 12px
-}
-
-.baner_box .h1 {
-    color: white;
-    font-weight: 200;
-    font-size: 72px
-}
-
-.baner_box .h1 span {
-    font-weight: 800;
-    color: #1E2329;
-    font-style: normal
-}
-
-.baner_box2 {
-    width: 100vw;
-    height: auto;
-    padding: 91px 0 65px;
-    background: rgb(44, 111, 189);
-    background: url(../img/baner2.png) no-repeat center right, linear-gradient(90deg, rgba(44, 111, 189, 1) 0%, rgba(33, 116, 206, 1) 72%)
-}
-
-.baner_box2 .row_box {
-    width: 100%;
-    max-width: 1350px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between
-}
-
-.baner_box2 .h1 {
-    font-size: 80px
-}
-
-.baner_box2 .contact_form {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start
-}
-
-.baner_box2 input {
-    width: 535px;
-    height: 50px;
-    background-color: #FFF;
-    border: 1px solid #B7C3D4;
-    border-radius: 25px;
-    outline: none;
-    color: #485768;
-    font-size: 15px;
-    padding: 0 40px;
-    font-weight: 400;
-    margin: 0 35px 10px 10px;
-    font-family: 'Nunito', sans-serif
-}
-
-.baner_box2 input::placeholder {
-    color: #485768;
-    font-size: 15px
-}
-
-.baner_box2 input:focus,
-.baner_box2 input:active {
-    outline: none
-}
-
-.baner_box2 .secure_btn {
-    width: 305px;
-    height: 55px;
-    font-size: 18px;
-    margin: 5px 0 0 10px
-}
-
-.baner_box2 .arrow {
-    max-width: 138px;
-    margin: 65px 0px 0 -70px
-}
-
-.baner_box2 .text_box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 30px 0 0 27px;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 57px 0px 0;
-    color: white
-}
-
-.baner_box2 .text {
-    font-size: 15px
-}
-
-.baner_box2 .text img {
-    margin: 0 3px 0 0
-}
-
-.baner_box2 .number {
-    font-size: 31.5px;
-    font-weight: 600
 }
 
 .industry_solutions_section {
@@ -629,7 +428,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative
 }
 
 .industry_solutions_section .bg_img {
@@ -649,7 +448,7 @@ body {
 }
 
 .industry_solutions_section .box_item .h1 {
-    color: white;
+    color: #fff;
     font-weight: 400;
     position: relative;
     z-index: 1;
@@ -657,9 +456,9 @@ body {
 }
 
 .industry_solutions_section .box_item .h1 a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .industry_solutions_section .box_item .h1 img {
@@ -681,90 +480,19 @@ body {
     font-weight: 200;
     font-size: 25px;
     line-height: 34px;
-    color: white
+    color: #fff
 }
 
 .industry_solutions_section li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: border-color .4s
 }
 
-.section7 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 140px 0
-}
-
-.section7 .row_box {
-    max-width: 1420px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start
-}
-
-.section7 .image {
-    max-width: 666px;
-    margin: 6px -33px -20px 0px
-}
-
-.section7 .h1 {
-    color: #1E2329;
-    font-size: 55px;
-    font-weight: 200;
-    margin: 0 0 45px
-}
-
-.section7 .form_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start
-}
-
-.section7 input {
-    width: 375px;
-    height: 50px;
-    background-color: #FFF;
-    border: 1px solid #B7C3D4;
-    border-radius: 30px;
-    outline: none;
-    color: #485768;
-    font-size: 15px;
-    padding: 0 40px;
-    margin: 0 0 10px;
-    font-family: 'Nunito', sans-serif
-}
-
-.section7 input:last-of-type {
-    margin: 0 0 30px
-}
-
-.section7 .secure_btn {
-    width: 275px;
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px
-}
-
-.section7 .yellow_btn::after {
-    height: 55px
-}
-
-.section7 .text {
-    padding: 60px 0 0;
-    color: #5C6E83;
-    font-size: 20px
-}
-
-.section7 .img_box {
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0 0
+.industry_solutions_section li a:hover {
+    border-color: #fff
 }
 
 .faq_section {
@@ -783,7 +511,7 @@ body {
 }
 
 .accordion-button {
-    color: #5C6E83;
+    color: #5c6e83;
     background-color: transparent;
     font-size: 23px;
     padding: 0;
@@ -791,8 +519,8 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-    color: #5C6E83;
-    background-color: white;
+    color: #5c6e83;
+    background-color: #fff;
     font-size: 23px;
     padding: 0;
     border: none
@@ -801,31 +529,31 @@ body {
 .accordion-item {
     border: none;
     margin: 0 0 20px;
-    background-color: white;
+    background-color: #fff;
     box-shadow: 0 6px 46px rgb(0 0 0 / 12%);
-    padding: 49px 65px;
+    padding: 49px 65px
 }
 
 .accordion-button p {
     width: 80%;
     font-weight: 400;
     line-height: 27.6px;
-    font-family: 'Nunito', sans-serif
+    font-family: Nunito, sans-serif
 }
 
 .accordion-button span {
-    color: #2C6FBD;
-    font-weight: bold
+    color: #2c6fbd;
+    font-weight: 700
 }
 
 .accordion-body {
-    background-color: white;
+    background-color: #fff;
     padding: 0;
     font-size: 23px;
     font-weight: 400;
     line-height: 27.6px;
-    font-family: 'Nunito', sans-serif;
-    color: #5C6E83
+    font-family: Nunito, sans-serif;
+    color: #5c6e83
 }
 
 .accordion-button::after {
@@ -855,7 +583,7 @@ body {
     }
 
     .home_section1 {
-        padding: 0px 0px 20px 0
+        padding: 0 0 20px 0
     }
 
     .home_section1 .text_box {
@@ -885,7 +613,7 @@ body {
 
     .home_section1 .img_box {
         width: 54%;
-        margin: 0 0% 0 -2%;
+        margin: 0 0 0 -2%;
         height: 85vw;
         background-position: -2% 50%
     }
@@ -901,27 +629,12 @@ body {
     }
 
     .home_section1 {
-        padding: 0px 0px 100px 55px;
+        padding: 0 0 100px 55px;
         justify-content: flex-start
     }
 
     .home_section1 .logo_boxes {
         margin: 55px 0 0
-    }
-
-    .we_do_section2 .row_box {
-        max-width: 900px;
-        align-items: center;
-        flex-wrap: wrap
-    }
-
-    .we_do_clm:nth-of-type(3) {
-        margin: 95px 0 60px
-    }
-
-    .we_do_section2 .circle_box {
-        width: 466px;
-        height: 466px
     }
 
     .home_section1 h1 {
@@ -946,8 +659,8 @@ body {
     }
 
     .customer_logo:nth-of-type(1),
-    .customer_logo:nth-of-type(3),
     .customer_logo:nth-of-type(2),
+    .customer_logo:nth-of-type(3),
     .customer_logo:nth-of-type(4) {
         justify-content: center
     }
@@ -955,32 +668,6 @@ body {
     .customer_logo {
         width: 33%;
         margin: 0 0 40px
-    }
-
-    .we_do_section2 .we_do_clm {
-        align-items: flex-start
-    }
-
-    .we_do_clm:nth-of-type(2) {
-        margin: 95px 0 60px -74px;
-        align-items: center
-    }
-
-    .we_do_section2 .do_item {
-        font-size: 38px
-    }
-
-    .we_do_section2 .do_item img {
-        min-width: 30px
-    }
-
-    .we_do_section2 .do_item img.icon {
-        min-width: 48px
-    }
-
-    .we_do_clm:nth-of-type(4) {
-        margin: 95px 0 60px -74px;
-        align-items: center
     }
 
     .home_section1 .text_box {
@@ -1023,7 +710,7 @@ body {
         font-size: 32px;
         padding: 30px 28px;
         width: 80%;
-        background-color: white;
+        background-color: #fff
     }
 
     .section3 .item {
@@ -1033,52 +720,6 @@ body {
     .section3 .item img {
         max-width: 181px;
         width: 181px
-    }
-
-    .baner_box2 input {
-        width: 430px;
-        height: 64px;
-        font-size: 25px;
-        border-radius: 32px;
-        margin: 0 0 10px 10px
-    }
-
-    .baner_box2 input::placeholder {
-        font-size: 25px
-    }
-
-    .baner_box2 .secure_btn {
-        width: 400px;
-        font-size: 32px;
-        line-height: 32px
-    }
-
-    .baner_box2 .yellow_btn::after {
-        height: 35px
-    }
-
-    .baner_box2 .arrow {
-        max-width: 89px;
-        margin: 41px 0px 0 -34px
-    }
-
-    .baner_box2 .h1 {
-        font-size: 57px;
-        font-weight: 200;
-        font-style: normal
-    }
-
-    .baner_box2 .row_box {
-        padding: 0 40px
-    }
-
-    .baner_box2 .text_box {
-        padding: 30px 30px;
-        margin: 34px 0 0 0
-    }
-
-    .baner_box2 {
-        background: url(../img/baner2.png) no-repeat center right, linear-gradient(90deg, rgba(44, 111, 189, 1) 3%, rgba(33, 116, 206, 1) 42%)
     }
 
     .industry_solutions_section {
@@ -1127,7 +768,7 @@ body {
     .accordion-button,
     .accordion-button:not(.collapsed) {
         font-size: 32px;
-        line-height: 38px;
+        line-height: 38px
     }
 
     .accordion-body {
@@ -1146,54 +787,6 @@ body {
         background-size: cover
     }
 
-    .section7 .row_box {
-        max-width: 990px
-    }
-
-    .section7 .image {
-        max-width: 520px;
-        margin: 20px -36px -20px -64px
-    }
-
-    .section7 input {
-        width: 435px;
-        height: 58px;
-        font-size: 32px;
-        line-height: 32px;
-        color: #979BA0
-    }
-
-    .section7 .yellow_btn::after {
-        height: 35px
-    }
-
-    .section7 .secure_btn {
-        height: 63px;
-        width: 355px;
-        font-size: 32px;
-        margin: 20px 0 0
-    }
-
-    .section7 .yellow_btn::after {
-        height: 53px
-    }
-
-    .section7 .text {
-        padding: 40px 0 0;
-        font-size: 19px
-    }
-
-    .section7 .img_box {
-        width: 74%
-    }
-
-    .section7 .h1 {
-        font-size: 45px;
-        margin: 0 0 70px;
-        font-style: normal;
-        font-weight: 200
-    }
-
     .splide__slide .user_img {
         width: 267px;
         height: 267px
@@ -1203,7 +796,7 @@ body {
         font-size: 32px;
         font-style: italic;
         font-weight: 200;
-        color: #5C6E83;
+        color: #5c6e83;
         margin: 0 0 80px;
         position: relative;
         display: flex
@@ -1269,58 +862,12 @@ body {
 }
 
 @media all and (max-width:786px) {
-    .we_do_section2 .circle_box {
-        width: 366px;
-        height: 366px
-    }
-
-    .we_do_section2 .do_item {
-        font-size: 30px
-    }
-
-    .we_do_section2 .do_item img.icon {
-        min-width: 35px
-    }
-
-    .we_do_clm:nth-of-type(2),
-    .we_do_clm:nth-of-type(4) {
-        margin: 95px 0 60px -61px;
-        align-items: center
-    }
-
     .section3 .item {
         max-width: 100%
     }
 
     .section3 .items_box {
         padding: 0 20px
-    }
-
-    .baner_box2 .h1 {
-        font-size: 48px;
-        font-weight: 200;
-        font-style: normal
-    }
-
-    .baner_box2 input {
-        width: 375px
-    }
-
-    .baner_box2 .secure_btn {
-        width: 355px;
-        font-size: 28px
-    }
-
-    .section7 .image {
-        max-width: 450px;
-        margin: 20px -36px -20px -64px
-    }
-
-    .section7 input {
-        width: 385px;
-        height: 58px;
-        font-size: 26px;
-        color: #979BA0
     }
 
     .splide__slide .text_box {
@@ -1374,37 +921,11 @@ body {
     }
 
     .home_section1 {
-        padding: 0px 20px 100px
+        padding: 0 20px 100px
     }
 
     .home_section1 .logo_boxes div.img_line {
-        width: 100%;
-    }
-
-    .we_do_section2 .row_box {
-        max-width: 99%;
-    }
-
-    .we_do_section2 .circle_box {
-        width: 300px;
-        height: 300px
-    }
-
-    .we_do_clm:nth-of-type(2),
-    .we_do_clm:nth-of-type(3),
-    .we_do_clm:nth-of-type(4),
-    .we_do_section2 .we_do_clm {
-        margin: 20px 0;
-        align-items: center
-    }
-
-    .we_do_section2 .do_item {
-        font-size: 30px;
-        margin: 25px 0 0
-    }
-
-    .we_do_section2 .do_item img {
-        min-width: 20px
+        width: 100%
     }
 
     .section3 .text_box h1 {
@@ -1418,7 +939,7 @@ body {
         justify-content: center;
         align-items: center;
         padding: 20px 0 0;
-        background-color: white;
+        background-color: #fff
     }
 
     .section3 .item img {
@@ -1427,50 +948,6 @@ body {
 
     .section3 .item .text {
         width: 100%
-    }
-
-    .baner_box2 .row_box {
-        flex-direction: column;
-        padding: 0 30px
-    }
-
-    .baner_box2 .arrow {
-        display: none
-    }
-
-    .baner_box2 input,
-    .baner_box2 .secure_btn {
-        width: 100%
-    }
-
-    .baner_box2 input {
-        margin: 0 0 10px
-    }
-
-    .baner_box2 .contact_form {
-        margin: 20px 0 0
-    }
-
-    .baner_box2 .h1 {
-        font-size: 48px
-    }
-
-    .baner_box2 .secure_btn {
-        font-size: 24px;
-        line-height: 24px
-    }
-
-    .baner_box2 .yellow_btn::after {
-        height: 26px
-    }
-
-    .baner_box2 {
-        background: url(../img/baner2.png) no-repeat 22% 56%, linear-gradient(90deg, rgba(44, 111, 189, 1) 3%, rgba(33, 116, 206, 1) 42%);
-        background-size: cover
-    }
-
-    .baner_box2 input::placeholder {
-        font-size: 25px
     }
 
     .industry_solutions_section .box_item {
@@ -1491,8 +968,7 @@ body {
     .accordion-button,
     .accordion-button:not(.collapsed) {
         font-size: 28px;
-        line-height: 30px;
-
+        line-height: 30px
     }
 
     .accordion-item {
@@ -1501,40 +977,12 @@ body {
 
     .accordion-body {
         font-size: 28px;
-        line-height: 30px;
+        line-height: 30px
     }
 
     .accordion-button p {
         line-height: 32px;
         width: 93%
-    }
-
-    .section7 .row_box {
-        flex-direction: column
-    }
-
-    .section7 .image {
-        max-width: 100%;
-        margin: 0 0 30px
-    }
-
-    .section7 .h1 {
-        font-size: 30px
-    }
-
-    .section7 input,
-    .section7 .secure_btn {
-        width: 100%;
-        font-size: 25px;
-        line-height: 25px
-    }
-
-    .section7 .form_box {
-        padding: 0 20px
-    }
-
-    .section7 .img_box {
-        width: 100%
     }
 
     .splide__slide {
@@ -1570,10 +1018,6 @@ body {
         line-height: 32px;
         width: 277px
     }
-
-    .section7 .yellow_btn::after {
-        height: 24px
-    }
 }
 
 @media all and (max-width:380px) {
@@ -1591,21 +1035,6 @@ body {
     .home_section1 h1 {
         font-size: 50px;
         line-height: 61px
-    }
-
-    .baner_box2 .secure_btn {
-        font-size: 20px;
-        margin: 10px 0 0
-    }
-
-    .baner_box2 .text_box {
-        padding: 30px 12px;
-        margin: 34px 0 0 0
-    }
-
-    .baner_box2 .row_box {
-        flex-direction: column;
-        padding: 0 19px
     }
 
     .industry_solutions_section .box_item {
@@ -1628,15 +1057,6 @@ body {
     .accordion-button::after {
         width: 27px;
         height: 15px
-    }
-
-    .section7 .form_box {
-        padding: 0 20px;
-        width: 100%
-    }
-
-    .section7 .img_box {
-        flex-wrap: wrap
     }
 
     .splide {

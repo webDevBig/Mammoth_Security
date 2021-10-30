@@ -1,11 +1,11 @@
 .h1 {
     font-size: 40px;
-    color: #2C6FBD;
+    color: #2c6fbd;
     font-weight: 600
 }
 
 body {
-    background-image: url(../img/bg.png);
+    background-image: url(../img/home/bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%
@@ -48,7 +48,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
+    color: #fff;
     padding: 33px 55px 33px 60px;
     margin: 0 0 20px;
     text-decoration: none
@@ -63,7 +63,7 @@ header {
     line-height: 65px;
     font-weight: 400;
     text-decoration: none;
-    color: white;
+    color: #fff;
     cursor: pointer
 }
 
@@ -86,12 +86,18 @@ header {
     line-height: 51px;
     font-weight: 200;
     text-decoration: none;
-    cursor: pointer;
+    cursor: pointer
 }
-.locations_item .location_list li  a
-{
-    color: white;
+
+.locations_item .location_list li a {
+    color: #fff;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color .4s
+}
+
+.locations_item .location_list li a:hover {
+    border-color: #fff
 }
 
 @media all and (max-width:1024px) {

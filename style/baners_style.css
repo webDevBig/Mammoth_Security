@@ -1,0 +1,243 @@
+.baner_box {
+    width: 100vw;
+    height: 446px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c6fbd;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/home/baner1.png);
+    position: relative
+}
+
+.baner_box .h1 {
+    color: #fff;
+    font-weight: 200;
+    font-size: 72px
+}
+
+.baner_box .h1 span {
+    font-weight: 800;
+    color: #1e2329;
+    font-style: normal
+}
+
+.baner_box2 {
+    width: 100vw;
+    height: auto;
+    padding: 91px 0 65px;
+    background: #2c6fbd;
+    background: url(../img/home/baner2.png) no-repeat center right, linear-gradient(90deg, #2c6fbd 0, #2174ce 72%)
+}
+
+.baner_box2 .row_box {
+    width: 100%;
+    max-width: 1350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.baner_box2 .h1 {
+    font-size: 80px
+}
+
+.baner_box2 .contact_form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+
+.baner_box2 input {
+    width: 535px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #b7c3d4;
+    border-radius: 25px;
+    outline: 0;
+    color: #485768;
+    font-size: 15px;
+    padding: 0 40px;
+    font-weight: 400;
+    margin: 0 35px 10px 10px;
+    font-family: Nunito, sans-serif
+}
+
+.baner_box2 input::placeholder {
+    color: #485768;
+    font-size: 15px
+}
+
+.baner_box2 input:active,
+.baner_box2 input:focus {
+    outline: 0
+}
+
+.baner_box2 .secure_btn {
+    width: 305px;
+    height: 55px;
+    font-size: 18px;
+    margin: 5px 0 0 10px
+}
+
+.baner_box2 .arrow {
+    max-width: 138px;
+    margin: 65px 0 0 -70px
+}
+
+.baner_box2 .text_box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 30px 0 0 27px;
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    margin: 57px 0 0;
+    color: #fff
+}
+
+.baner_box2 .text {
+    font-size: 15px
+}
+
+.baner_box2 .text img {
+    margin: 0 3px 0 0
+}
+
+.baner_box2 .number {
+    font-size: 31.5px;
+    font-weight: 600
+}
+
+@media all and (max-width:1024px) {
+    .baner_box2 input {
+        width: 430px;
+        height: 64px;
+        font-size: 25px;
+        border-radius: 32px;
+        margin: 0 0 10px 10px
+    }
+
+    .baner_box2 input::placeholder {
+        font-size: 25px
+    }
+
+    .baner_box2 .secure_btn {
+        width: 400px;
+        font-size: 32px;
+        line-height: 32px
+    }
+
+    .baner_box2 .yellow_btn::after {
+        height: 35px
+    }
+
+    .baner_box2 .arrow {
+        max-width: 89px;
+        margin: 41px 0 0 -34px
+    }
+
+    .baner_box2 .h1 {
+        font-size: 57px;
+        font-weight: 200;
+        font-style: normal
+    }
+
+    .baner_box2 .row_box {
+        padding: 0 40px
+    }
+
+    .baner_box2 .text_box {
+        padding: 30px 30px;
+        margin: 34px 0 0 0
+    }
+
+    .baner_box2 {
+        background: url(../img/home/baner2.png) no-repeat center right, linear-gradient(90deg, #2c6fbd 3%, #2174ce 42%)
+    }
+}
+
+@media all and (max-width:786px) {
+    .baner_box2 .h1 {
+        font-size: 48px;
+        font-weight: 200;
+        font-style: normal
+    }
+
+    .baner_box2 input {
+        width: 375px
+    }
+
+    .baner_box2 .secure_btn {
+        width: 355px;
+        font-size: 28px
+    }
+}
+
+@media all and (max-width:600px) {
+    .baner_box2 .row_box {
+        flex-direction: column;
+        padding: 0 30px
+    }
+
+    .baner_box2 .arrow {
+        display: none
+    }
+
+    .baner_box2 .secure_btn,
+    .baner_box2 input {
+        width: 100%
+    }
+
+    .baner_box2 input {
+        margin: 0 0 10px
+    }
+
+    .baner_box2 .contact_form {
+        margin: 20px 0 0
+    }
+
+    .baner_box2 .h1 {
+        font-size: 48px
+    }
+
+    .baner_box2 .secure_btn {
+        font-size: 24px;
+        line-height: 24px
+    }
+
+    .baner_box2 .yellow_btn::after {
+        height: 26px
+    }
+
+    .baner_box2 {
+        background: url(../img/home/baner2.png) no-repeat 22% 56%, linear-gradient(90deg, #2c6fbd 3%, #2174ce 42%);
+        background-size: cover
+    }
+
+    .baner_box2 input::placeholder {
+        font-size: 25px
+    }
+}
+
+@media all and (max-width:320px) {
+    .baner_box2 .secure_btn {
+        font-size: 20px;
+        margin: 10px 0 0
+    }
+
+    .baner_box2 .text_box {
+        padding: 30px 12px;
+        margin: 34px 0 0 0
+    }
+
+    .baner_box2 .row_box {
+        flex-direction: column;
+        padding: 0 19px
+    }
+}

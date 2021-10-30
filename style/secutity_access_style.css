@@ -1,14 +1,13 @@
 body {
-    background-image: url(../img/securityaccessbg.png);
-    background-position: -117% 50%;
+    background-image: url(../img/securityaccess/securityaccessbg.png);
+    background-position: -117% 50%
 }
 
 .section1 {
     width: 100vw;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-
+    align-items: center
 }
 
 .section1 .row_box {
@@ -16,14 +15,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1540px;
+    max-width: 1540px
 }
 
 .section1 .h3 {
     font-size: 80px;
     color: #1e2329;
-    font-weight: 200;
-
+    font-weight: 200
 }
 
 .section1 .video {
@@ -33,18 +31,18 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 25px 0 20px;
+    margin: 25px 0 20px
 }
 
 .section1 .text_box {
-    padding: 60px 0 0 100px;
+    padding: 60px 0 0 100px
 }
 
 .section1 .text {
     color: #5c6e83;
     font-size: 25px;
     font-weight: 300;
-    max-width: 580px;
+    max-width: 580px
 }
 
 .section1 .img_box {
@@ -52,10 +50,10 @@ body {
     width: 55%;
     max-height: 900px;
     height: 58vw;
-    background-image: url(../img/sec1securityaccess.png);
+    background-image: url(../img/securityaccess/sec1securityaccess.png);
     background-position: right bottom;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover
 }
 
 .section2 {
@@ -64,103 +62,107 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 45px 0 150px;
+    padding: 45px 0 150px
 }
 
 .section2 .h1 {
-    margin: 0 0 20px;
+    margin: 0 0 20px
 }
 
 .section2 .content_box {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 70px 0 0;
+    margin: 70px 0 0
 }
 
 .section2 .content_box:nth-of-type(2n) {
-    flex-direction: row-reverse;
+    flex-direction: row-reverse
 }
 
-
 .section2 .text_box {
-    width: 590px;
+    width: 590px
 }
 
 .section2 .h2 {
     font-weight: 400;
     font-size: 42px;
     line-height: 50px;
-    color: #2C6FBD;
+    color: #2c6fbd;
     padding: 0 0 7px;
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid #e3e3e3
 }
 
 .section2 .text {
     font-size: 23px;
     line-height: 27px;
-    color: #5C6E83;
-    padding: 20px 0 40px;
+    color: #5c6e83;
+    padding: 20px 0 40px
 }
 
 .section2 .img_box {
     width: 492px;
     border-radius: 50%;
-    border: 8px solid #2C6FBD;
+    border: 8px solid #2c6fbd;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 50px 0 0;
+    margin: 0 50px 0 0
 }
 
 .section2 .content_box:nth-of-type(2n) .img_box {
-    margin: 0 0 0 50px;
+    margin: 0 0 0 50px
 }
 
 .section2 .img_box img {
     width: 100%;
     height: 100%;
-    border: 20px solid white;
+    border: 20px solid #fff;
     border-radius: 50%;
-    margin: 0;
+    margin: 0
 }
 
 .section2 .view_more_btn {
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 21px;
     padding: 15px 60px;
     border-radius: 50px;
+    display: inline-block
+}
+
+.section2 .view_more_btn:hover {
+    transform: scale(1.04)
 }
 
 @media all and (max-width:1280px) {
     .section1 .text_box {
-        padding: 60px 0 0 40px;
+        padding: 60px 0 0 40px
     }
 }
 
 @media all and (max-width:1024px) {
     body {
-        background-position: center -602%;
+        background-position: center -602%
     }
 
     .section1 .video {
-        width: 480px;
+        width: 480px
     }
 
     .section2 .img_box {
-        width: 350px;
+        width: 350px
     }
 
     .section2 .text_box {
-        width: 400px;
+        width: 400px
     }
 }
 
 @media all and (max-width:900px) {
     .section1 .img_box {
-        display: none;
+        display: none
     }
 
     .section1 .text_box {
@@ -168,47 +170,59 @@ body {
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center
     }
 
     .section2 .h1 {
-        text-align: center;
+        text-align: center
     }
 
     .section2 .img_box {
-        width: 300px;
+        width: 300px
     }
 
     .section2 .img_box img {
-        border: 10px solid white;
+        border: 10px solid #fff
     }
 
     .section2 .text_box {
-        width: 300px;
+        width: 300px
     }
 }
 
 @media all and (max-width:600px) {
     .section1 .h3 {
-        text-align: center;
+        text-align: center
     }
 
-    .section1 .video,
-    .section1 .text {
-        width: 90%;
+    .section1 .text,
+    .section1 .video {
+        width: 90%
+    }
+
+    .section2 .h2 {
+        text-align: center;
+        width: 100%
+    }
+
+    .section2 .text_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
     }
 
     .section2 .content_box,
     .section2 .content_box:nth-of-type(2n) {
-        flex-direction: column;
+        flex-direction: column
     }
 
-    .section2 .img_box,
-    .section2 .content_box:nth-of-type(2n) .img_box {
-        margin: 0 0 30px 0;
+    .section2 .content_box:nth-of-type(2n) .img_box,
+    .section2 .img_box {
+        margin: 0 0 30px 0
     }
 
     .section2 .h3 {
-        font-size: 40px;
+        font-size: 40px
     }
 }

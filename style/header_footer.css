@@ -4,41 +4,41 @@
     box-sizing: border-box
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-span,
-a,
-dl,
-ol,
-ul,
-hr,
+,
 .h1,
 .h2,
 .h3,
 .h4,
 .h5,
 .h6,
-    {
+a,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+ol,
+p,
+span,
+ul {
     margin: 0;
     padding: 0
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: Nunito, sans-serif;
     font-weight: 400;
     cursor: default;
-    background-color: white
+    background-color: #fff
 }
 
 .top_content {
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 header {
@@ -48,10 +48,10 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     border: none;
-    background-color: white;
+    background-color: #fff;
     position: relative;
     box-shadow: 0 6px 38px rgb(0 0 0 / 23%);
-    z-index: 3;
+    z-index: 3
 }
 
 .logo {
@@ -74,7 +74,7 @@ header {
 
 @keyframes rotate {
     0% {
-        transform: rotate(0deg)
+        transform: rotate(0)
     }
 
     70% {
@@ -100,13 +100,11 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid rgba(113, 136, 165, 0.15);
+    border-bottom: 1px solid rgba(113, 136, 165, .15);
     position: relative;
     z-index: 4;
-    background-color: white;
+    background-color: #fff
 }
-
-.line_nav_bottom {}
 
 .top_nav:last-of-type {
     border: none
@@ -121,7 +119,7 @@ header .menu {
 header .top_menu {
     justify-content: flex-end;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 0
 }
 
 header .top_nav_menu_list {
@@ -137,7 +135,7 @@ header .top_nav_menu_list {
 header .top_nav_menu {
     font-weight: 600;
     font-size: 15px;
-    color: #2C6FBC;
+    color: #2c6fbc;
     text-decoration: none;
     cursor: pointer
 }
@@ -161,15 +159,21 @@ header .contact_btn {
     height: 50px;
     font-weight: 700;
     font-size: 15px;
-    color: #2C6FBD;
-    border: 1px solid #2C6FBD;
+    color: #2c6fbd;
+    border: 1px solid #2c6fbd;
     border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: none;
+    outline: 0;
     background-color: transparent;
-    cursor: pointer
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+header .contact_btn:hover {
+    transform: scale(1.04);
 }
 
 header .separation_box {
@@ -182,14 +186,14 @@ header .separation_box {
 header hr.hr {
     width: 1px;
     height: 17px;
-    background-color: #849DB5;
+    background-color: #849db5;
     opacity: 1
 }
 
 header .or {
     font-size: 12px;
     font-weight: 400;
-    color: #7188A5;
+    color: #7188a5;
     margin: 7px 0
 }
 
@@ -198,7 +202,7 @@ header .number_box {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #5C6E83;
+    color: #5c6e83;
     font-size: 15px
 }
 
@@ -209,7 +213,7 @@ header .number_box img {
 
 header .number {
     font-size: 25px;
-    color: #1E2329;
+    color: #1e2329;
     font-weight: 600;
     margin: 3px 0 0
 }
@@ -218,7 +222,7 @@ nav.main_menu {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 nav.main_menu ul {
@@ -245,31 +249,31 @@ nav.main_menu ul li {
     justify-content: center;
     position: relative;
     height: 100%;
-    width: 20%;
+    width: 20%
 }
 
 nav.main_menu ul li:last-of-type img {
-    max-width: 47px;
+    max-width: 47px
 }
 
 nav.main_menu ul li:first-of-type img {
-    max-width: 46px;
+    max-width: 46px
 }
 
 nav.main_menu ul li:nth-of-type(2) img {
-    max-width: 32px;
+    max-width: 32px
 }
 
 nav.main_menu ul li:nth-of-type(3) img {
-    max-width: 78px;
+    max-width: 78px
 }
 
 nav.main_menu ul li:nth-of-type(4) img {
-    max-width: 85px;
+    max-width: 85px
 }
 
 nav.main_menu ul li:nth-of-type(3) .img_cont {
-    margin: 0;
+    margin: 0
 }
 
 nav.main_menu a {
@@ -277,22 +281,22 @@ nav.main_menu a {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    color: #5C6E83;
+    color: #5c6e83;
     font-size: 18px;
     text-decoration: none;
     cursor: pointer;
     height: 100%;
     width: 210px;
-    padding: 15px 0px;
-    transition: background-color .5s;
+    padding: 15px 0;
+    transition: background-color .5s
 }
 
 nav.main_menu ul li a:hover {
-    background-color: rgba(70, 168, 233, 0.2)
+    background-color: rgba(70, 168, 233, .2)
 }
 
 nav.main_menu ul li:hover a {
-    background-color: rgba(70, 168, 233, 0.2)
+    background-color: rgba(70, 168, 233, .2)
 }
 
 .opened_menu_item .menu_list {
@@ -302,23 +306,22 @@ nav.main_menu ul li:hover a {
     align-items: center;
     list-style: none;
     max-width: 18%;
-    min-width: 16%;
-
+    min-width: 16%
 }
 
 .opened_menu_item li {
     font-size: 23px;
-    color: #5C6E83;
-    font-weight: bold;
+    color: #5c6e83;
+    font-weight: 700;
     line-height: 28px;
     width: 100%;
     padding: 20px 10px;
-    border-bottom: 1px solid rgba(113, 136, 165, 0.15);
+    border-bottom: 1px solid rgba(113, 136, 165, .15)
 }
 
 .opened_menu_item li a {
     font-size: 18px;
-    color: #5C6E83;
+    color: #5c6e83;
     line-height: 21px;
     font-weight: 400;
     text-align: left;
@@ -327,27 +330,26 @@ nav.main_menu ul li:hover a {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center
 }
 
-/*.opened_menu_item li*/
 .opened_menu_box {
     width: 100vw;
     min-height: 470px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #fff;
     box-shadow: 0 6px 38px rgb(0 0 0 / 23%);
-    transform: translate(0px, -100%);
+    transform: translate(0, -100%);
     z-index: 2;
     transition: all .5s;
-    position: absolute;
+    position: absolute
 }
 
 .opened_menu_box.active {
-    transform: translate(0px, 280px);
-    transition: all .5s;
+    transform: translate(0, 280px);
+    transition: all .5s
 }
 
 .opened_menu_item {
@@ -358,42 +360,40 @@ nav.main_menu ul li:hover a {
     align-items: center;
     transition: all .5s;
     padding: 54px 0 40px;
-    background-color: white;
-
+    background-color: #fff
 }
 
 .opened_menu_item.active {
-    display: flex;
+    display: flex
 }
 
 .access_Control_menu.opened_menu_item .content_box {
     padding: 0 53px;
-    justify-content: flex-start;
+    justify-content: flex-start
 }
 
 .structured_Cabling_menu.opened_menu_item .content_box {
     padding: 0 25px;
-    justify-content: flex-start;
+    justify-content: flex-start
 }
 
 .access_Control_menu.opened_menu_item .menu_list,
 .structured_Cabling_menu.opened_menu_item .menu_list {
     max-width: 51%;
-    margin: 0 37px;
+    margin: 0 37px
 }
 
-
 .access_Control_menu.opened_menu_item .main_img {
-    margin: 20px 100px 0 0;
+    margin: 20px 100px 0 0
 }
 
 .opened_menu_item li a img {
     margin: 0 0 0 15px;
-    width: 17px;
+    width: 17px
 }
 
 .opened_menu_item img {
-    margin: 20px 0 0;
+    margin: 20px 0 0
 }
 
 .opened_menu_item .content_box {
@@ -401,33 +401,30 @@ nav.main_menu ul li:hover a {
     max-width: 1275px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start
 }
-
 
 nav.main_menu .open_sub_menu_security.hoverable {
     display: flex
 }
 
-
-
 .opened_menu_item .trans_btn {
-    color: #2C6FBD;
+    color: #2c6fbd;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 18px;
     text-align: center;
-    border: 1px solid #2C6FBD;
+    border: 1px solid #2c6fbd;
     padding: 12px 35px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 21px;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .opened_menu_item .trans_btn:active,
 .opened_menu_item .trans_btn:focus {
-    outline: none;
-    box-shadow: none;
+    outline: 0;
+    box-shadow: none
 }
 
 .opened_menu_item .btn_box {
@@ -436,7 +433,7 @@ nav.main_menu .open_sub_menu_security.hoverable {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 0 0;
+    padding: 30px 0 0
 }
 
 #menu2 li {
@@ -454,7 +451,20 @@ nav.main_menu .sub_menu li {
 }
 
 nav.main_menu .sub_menu li:hover {
-    background-color: rgba(44, 111, 189, 0.2)
+    background-color: rgba(44, 111, 189, .2)
+}
+.structured_Cabling_menu .main_img
+{
+    max-width: 481px;
+    margin: -10px 0 0;
+}
+.security_camera_menu .main_img
+{
+    max-width: 370px;
+}
+.fire_Alarm_menu .main_img
+{
+    max-width: 270px;
 }
 
 .mobile_btn {
@@ -466,7 +476,7 @@ nav.main_menu .sub_menu li:hover {
     width: 63px;
     margin: 0 25px 0 0;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center
 }
 
 .mobile_btn .menu_icon {
@@ -476,22 +486,19 @@ nav.main_menu .sub_menu li:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    transition: all .5s;
+    transition: all .5s
 }
 
 .mobile_btn.active .menu_icon {
     background-image: url(../img/icons/close24px.png);
     width: 53px;
-    height: 53px;
-    /*    filter: invert(1);*/
-
+    height: 53px
 }
 
 .mobile_btn.active .menu_icon:active,
 .mobile_btn.active .menu_icon:hover {
-    outline: none;
-    border: none;
+    outline: 0;
+    border: none
 }
 
 .close_menu,
@@ -509,17 +516,17 @@ nav.main_menu .sub_menu li:hover {
     justify-content: center;
     align-items: center;
     width: auto;
-    margin: 0 0px 5px 0
+    margin: 0 0 5px 0
 }
 
 .yellow_btn {
     border-radius: 27px;
-    background-color: #F7B53E;
-    color: black;
+    background-color: #f7b53e;
+    color: #000;
     border: none;
     font-size: 18px;
     line-height: 1;
-    font-weight: bold;
+    font-weight: 700;
     transition: transform 1s;
     cursor: pointer;
     position: relative
@@ -549,8 +556,21 @@ nav.main_menu .sub_menu li:hover {
     opacity: 1
 }
 
+.orange_tag {
+    background-color: #f69679;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
 
-
+.blue_tag {
+    background-color: #286cbc;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 footer {
     width: 100vw;
@@ -558,7 +578,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E7E9ED
+    background-color: #e7e9ed
 }
 
 footer .row_box {
@@ -567,7 +587,7 @@ footer .row_box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
     padding: 20px 35px 20px 20px
 }
 
@@ -587,13 +607,13 @@ footer .number_box img {
 
 footer .number_box p {
     font-size: 20px;
-    color: #5C6E83;
+    color: #5c6e83;
     margin: 0 15px 0 0
 }
 
 footer .number_box .number {
     font-size: 30px;
-    color: #2C6FBD;
+    color: #2c6fbd;
     font-weight: 600;
     margin: 0
 }
@@ -629,9 +649,8 @@ footer .footer_menu {
     padding: 0 0 10px
 }
 
-
 footer li a {
-    color: #5C6E83;
+    color: #5c6e83;
     font-size: 16px;
     text-decoration: none;
     font-weight: 200
@@ -639,11 +658,11 @@ footer li a {
 
 footer .title,
 footer .title a {
-    color: #1E2329;
+    color: #1e2329;
     font-size: 18px;
     margin: 0 0 10px;
     font-weight: 400;
-    cursor: pointer;
+    cursor: pointer
 }
 
 footer li a:hover {
@@ -654,7 +673,7 @@ footer .row_box:last-of-type {
     border: none;
     padding: 35px 0 50px;
     font-size: 14px;
-    color: #5C6E83;
+    color: #5c6e83;
     display: flex;
     justify-content: center;
     align-items: center
@@ -666,14 +685,14 @@ nav.main_menu .mobile_arrow {
 }
 
 .mobile_sub_menu_box {
-    display: none;
+    display: none
 }
 
 @media all and (max-width:1280px) {
 
+    footer .row_box,
     header .menu,
-    nav.main_menu ul,
-    footer .row_box {
+    nav.main_menu ul {
         max-width: 1024px
     }
 }
@@ -685,16 +704,16 @@ nav.main_menu .mobile_arrow {
 
     header {
         z-index: inherit;
-        box-shadow: none;
+        box-shadow: none
     }
 
     .top_nav_line {
-        z-index: 6;
+        z-index: 6
     }
 
     .line_nav_center {
         z-index: 5;
-        box-shadow: 0 6px 38px rgb(0 0 0 / 23%);
+        box-shadow: 0 6px 38px rgb(0 0 0 / 23%)
     }
 
     header .top_menu {
@@ -736,8 +755,8 @@ nav.main_menu .mobile_arrow {
         display: block
     }
 
-    header .number_box,
-    header .number {
+    header .number,
+    header .number_box {
         font-size: 26px
     }
 
@@ -746,7 +765,7 @@ nav.main_menu .mobile_arrow {
     }
 
     #opened_menu_box {
-        display: none;
+        display: none
     }
 
     footer {
@@ -790,7 +809,7 @@ nav.main_menu .mobile_arrow {
     nav.main_menu {
         width: 100vw;
         height: 80vh;
-        background-color: white;
+        background-color: #fff;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -801,20 +820,20 @@ nav.main_menu .mobile_arrow {
 
     .line_nav_bottom {
         overflow: auto;
-        transform: translate3d(0%, -120%, 0);
+        transform: translate3d(0, -120%, 0);
         position: fixed;
         transition: all 1s;
         height: 100vh;
-        justify-content: flex-start;
+        justify-content: flex-start
     }
 
     .line_nav_bottom.open {
-        transform: translate3d(0%, 236px, 0);
+        transform: translate3d(0, 236px, 0)
     }
 
     nav.main_menu ul.burger_menu {
         height: auto;
-        overflow: auto;
+        overflow: auto
     }
 
     nav.main_menu ul {
@@ -826,23 +845,23 @@ nav.main_menu .mobile_arrow {
 
     nav.main_menu .main_menu_item {
         height: 118px;
-        color: #5C6E83;
+        color: #5c6e83;
         font-size: 41px;
         line-height: 49px;
         width: 100%;
         padding: 0;
-        border: 1px solid rgba(113, 136, 165, 0.15);
+        border: 1px solid rgba(113, 136, 165, .15);
         justify-content: center;
         flex-direction: row;
-        position: relative;
+        position: relative
     }
 
     nav.main_menu .main_menu_item.active {
-        background-color: rgba(70, 168, 233, 0.2);
+        background-color: rgba(70, 168, 233, .2)
     }
 
     nav.main_menu ul li:hover a {
-        background-color: transparent;
+        background-color: transparent
     }
 
     nav.main_menu .mobile_arrow {
@@ -854,10 +873,8 @@ nav.main_menu .mobile_arrow {
         background-size: cover;
         width: 26px;
         height: 18px;
-        transition: all .5s;
+        transition: all .5s
     }
-
-    li > .open_sub_menu:after {}
 
     nav.main_menu ul li {
         width: 100%;
@@ -873,10 +890,10 @@ nav.main_menu .mobile_arrow {
         justify-content: flex-start;
         align-items: flex-start;
         height: auto;
-        background-color: white;
+        background-color: #fff;
         position: relative;
         top: 0;
-        transition: all .5s;
+        transition: all .5s
     }
 
     nav.main_menu .mobile_sub_main_menu {
@@ -884,26 +901,26 @@ nav.main_menu .mobile_arrow {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding: 0
     }
 
     nav.main_menu .mobile_sub_main_menu li,
     nav.main_menu .mobile_sub_main_menu li .link {
         width: 100%;
         font-size: 41px;
-        color: #5C6E83;
+        color: #5c6e83;
         line-height: 49px;
         font-weight: 600;
         height: 118px;
-        background-color: rgba(113, 136, 165, 0.1);
-        border: 1px solid rgba(113, 136, 165, 0.15);
+        background-color: rgba(113, 136, 165, .1);
+        border: 1px solid rgba(113, 136, 165, .15);
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center
     }
 
     nav.main_menu .mobile_sub_main_menu li .link {
-        background-color: transparent;
+        background-color: transparent
     }
 
     nav.main_menu ul li:hover > .mobile_sub_menu_box {
@@ -915,7 +932,7 @@ nav.main_menu .mobile_arrow {
     }
 
     .mobile_sub_menu_box_open .mobile_sub_main_menu {
-        display: flex;
+        display: flex
     }
 
     nav.main_menu .mobile_sub_main_menu li.open_sub_sub_menu {
@@ -923,23 +940,23 @@ nav.main_menu .mobile_arrow {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto;
+        height: auto
     }
 
     nav.main_menu .mobile_sub_main_menu li.open_sub_sub_menu div {
         height: 118px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center
     }
 
     nav.main_menu .open_sub_sub_menu.active .sub_menu {
         display: flex;
-        height: auto;
+        height: auto
     }
 
     nav.main_menu .sub_menu a {
-        color: #5C6E83;
+        color: #5c6e83;
         height: 90px;
         font-size: 30px;
         line-height: 36px;
@@ -947,21 +964,19 @@ nav.main_menu .mobile_arrow {
         padding: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center
     }
 
-    nav.main_menu .sub_menu a:hover,
     nav.main_menu .sub_menu a:active,
-    nav.main_menu ul.sub_menu li:hover a,
-    nav.main_menu ul.sub_menu li:active a {
-        background-color: white;
+    nav.main_menu .sub_menu a:hover,
+    nav.main_menu ul.sub_menu li:active a,
+    nav.main_menu ul.sub_menu li:hover a {
+        background-color: #fff
     }
-
 
     .mobile_arrow.arrow_transform {
-        transform: rotate(180deg);
+        transform: rotate(180deg)
     }
-
 
     .mobile_btn {
         display: flex;
@@ -989,14 +1004,13 @@ nav.main_menu .mobile_arrow {
     nav.main_menu .sub_menu li {
         padding: 0;
         height: auto;
-        border: 1px solid rgba(113, 136, 165, 0.15);
-        background-color: white;
+        border: 1px solid rgba(113, 136, 165, .15);
+        background-color: #fff
     }
 
     header .center_menu {
         padding: 50px 55px 28px
     }
-
 
     .mob_img {
         display: flex
@@ -1009,7 +1023,7 @@ nav.main_menu .mobile_arrow {
 
     footer .number_box p {
         font-size: 27px;
-        color: #5C6E83;
+        color: #5c6e83;
         margin: 0 15px 0 0
     }
 
@@ -1033,29 +1047,28 @@ nav.main_menu .mobile_arrow {
 
     header .center_menu {
         flex-wrap: wrap;
-        z-index: 5;
+        z-index: 5
     }
-
 }
 
 @media all and (max-width:600px) {
     .line_nav_bottom.open {
-        transform: translate3d(0%, 293px, 0);
+        transform: translate3d(0, 293px, 0)
     }
 
     .mobile_btn {
         height: 32px;
-        width: 33px;
+        width: 33px
     }
 
     .mobile_btn .menu_icon {
         height: 23px;
-        width: 32px;
+        width: 32px
     }
 
     .mobile_btn.active .menu_icon {
         width: 33px;
-        height: 32px;
+        height: 32px
     }
 
     nav.main_menu {
@@ -1090,28 +1103,29 @@ nav.main_menu .mobile_arrow {
     nav.main_menu .mobile_sub_main_menu li .link {
         font-size: 25px;
         height: 100px;
+        text-align: center;
     }
 
     nav.main_menu .mobile_sub_main_menu li.open_sub_sub_menu div {
-        height: 100px;
+        height: 100px
     }
 
     nav.main_menu .sub_menu a {
-        font-size: 24px;
+        font-size: 24px
     }
 
     nav.main_menu {
-        height: 74vh;
+        height: 74vh
     }
 
     nav.main_menu .main_menu_item {
         height: 100px;
-        font-size: 25px;
+        font-size: 25px
     }
 
     nav.main_menu .mobile_arrow {
         width: 15px;
-        height: 9px;
+        height: 9px
     }
 
     footer {
@@ -1131,7 +1145,7 @@ nav.main_menu .mobile_arrow {
 
     footer .row_box:last-of-type p {
         text-align: center;
-        width: 260px;
+        width: 260px
     }
 }
 
@@ -1148,18 +1162,20 @@ nav.main_menu .mobile_arrow {
         width: 100%
     }
 
-    .mobile_btn{
+    .mobile_btn {
         height: 50px;
         width: 50px;
         margin: 0 0 0
     }
-     .mobile_btn .menu_icon {
+
+    .mobile_btn .menu_icon {
         height: 36px;
-        width: 50px;
+        width: 50px
     }
-     .mobile_btn.active .menu_icon {
+
+    .mobile_btn.active .menu_icon {
         height: 50px;
-        width: 50px;
+        width: 50px
     }
 
     .logo .logo_icon {
@@ -1171,5 +1187,4 @@ nav.main_menu .mobile_arrow {
         width: 125px;
         margin: 0 0 0 5px
     }
-
 }
