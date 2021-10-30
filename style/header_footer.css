@@ -654,6 +654,7 @@ footer .footer_menu {
 footer li a {
     color: #5c6e83;
     font-size: 16px;
+    line-height: 23px;
     text-decoration: none;
     font-weight: 200
 }
