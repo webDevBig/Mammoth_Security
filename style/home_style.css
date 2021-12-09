@@ -2,7 +2,8 @@ body {
     background-image: url(../img/home/bg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 97%
+    background-size: 100% 97%;
+    overflow-x: hidden;
 }
 
 .home_section1 {
