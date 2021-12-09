@@ -314,7 +314,8 @@ body {
     color: #5c6e83;
     opacity: .09;
     left: -36%;
-    top: -90%
+    top: -90%;
+    width: 290px;
 }
 
 .splide__slide .feedback::after {
@@ -326,7 +327,8 @@ body {
     color: #5c6e83;
     opacity: .09;
     bottom: -111%;
-    right: -11%
+    right: -11%;
+    width: 290px;
 }
 
 .splide__slide .name {
