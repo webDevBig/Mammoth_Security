@@ -37,14 +37,14 @@ body {
 }
 
 .home_section1 .contact_us {
-   padding: 15px 62px;
+    padding: 15px 62px;
     text-decoration: none;
     transition: all 1s;
     display: inline-block
 }
-.home_section1 .contact_us:hover
-{
-   transform: scale(1.04);
+
+.home_section1 .contact_us:hover {
+    transform: scale(1.04);
 }
 
 .home_section1 .text_box {
@@ -603,6 +603,20 @@ body {
     .industry_solutions_section li {
         font-size: 20px;
         line-height: 28px
+    }
+
+    .baner_box2 .arrow {
+        max-width: 95px;
+        margin: 65px 0 0 -50px;
+    }
+
+    .baner_box2 .h1 {
+        margin: 0 0 0 25px;
+    }
+
+    .we_do_section2 .circle_box {
+        width: 350px;
+        height: 350px;
     }
 }
 

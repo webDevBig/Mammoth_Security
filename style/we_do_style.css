@@ -100,6 +100,13 @@
     width: 15px
 }
 
+@media all and (max-width:1280px) {
+    .we_do_section2 .circle_box {
+        width: 350px;
+        height: 350px;
+    }
+}
+
 @media all and (max-width:1024px) {
     .we_do_section2 .row_box {
         max-width: 900px;
