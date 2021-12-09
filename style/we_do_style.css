@@ -105,6 +105,10 @@
         width: 350px;
         height: 350px;
     }
+
+    .we_do_section2 .row_box {
+        margin: 0 15px 0 0;
+    }
 }
 
 @media all and (max-width:1024px) {
